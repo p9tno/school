@@ -1,0 +1,119 @@
+.portal {
+    &__wrap {
+        background-color: #F6FCFC;
+        border-radius: 1em;
+        transition: background-color 0.3s;
+
+        @media (min-width: 992px) {
+            display: flex;
+        }
+    }
+
+    &__content {
+        padding: 2.5em 1.5em;
+
+        @media (min-width: 992px) {
+            padding: 5em 7.1875em;
+            width: 48.125em;
+            flex: none;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $title_font_family;
+        font-weight: 700;
+        color: $main_color;
+
+        font-size: 1.5em;
+        margin-bottom: 0.6667em;
+
+        @media (min-width: 992px) {
+            font-size: 2.5em;
+            margin-bottom: 0.8em;
+        }
+
+        transition: color 0.3s;
+    }
+
+    &__text {
+        line-height: 1.5;
+        color: $color_black_light;
+
+        font-size: 1em;
+        margin-bottom: 2em;
+        @media (min-width: 992px) {
+            font-size: 1.125em;
+            margin-bottom: 2.22223em;
+        }
+        transition: color 0.3s;
+    }
+
+    &__button {}
+
+    &__bg {
+        position: relative;
+        padding-top: 14em;
+        @media (min-width: 992px) {
+            flex-grow: 1;
+
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 21em;
+        height: 15.25em;
+
+        @media (min-width: 992px) {
+            right: 2em;
+            width: 47.8125em;
+            height: 31.25em;
+
+        }
+        z-index: 1;
+
+        img {
+            height: 100%;
+        };
+    }
+
+    &__circle {
+        position: absolute;
+        bottom: 0;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_first {
+            right: 0;
+            // border: 1px solid #000;
+
+            width: 17em;
+            height: 15em;
+
+            @media (min-width: 992px) {
+                right: -4em;
+                width: 35em;
+                height: 31.5em;
+            }
+        }
+
+        &_second {
+
+            // width: 18.875em;
+            // height: 19.4375em;
+
+            @media (min-width: 992px) {
+                right: 8em;
+                width: 44em;
+                height: 31.5em;
+            }
+        }
+    }
+
+}

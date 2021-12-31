@@ -1,0 +1,131 @@
+.ads {
+    overflow: hidden;
+    background-color: #F3F4F5;
+
+    .swiper-container {
+        overflow: inherit;
+    }
+
+    .swiper-slide {
+        margin-right: 2em;
+    }
+
+    &__item {}
+
+    &__bg {
+        position: relative;
+        padding: 1em 1em 1.5em;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        border-radius: 1em;
+        overflow: hidden;
+        min-height: 30.8125em;
+
+        display: flex;
+        align-items: flex-end;
+
+        // &:after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     display: block;
+        //     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 57.4%, rgba(0, 0, 0, 0.5) 100%);
+        //
+        // }
+
+    }
+
+    &__action {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    &__category {
+        padding: 0.54353em 0.738em;
+        border-radius: 1.71429em;
+
+        font-size: 0.875em;
+        margin-right: 1.572em;
+        /* 22/16 */
+
+        color: $color_white;
+        background-color: $color_danger;
+    }
+
+    &__timer {}
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__date {
+        color: $color_white;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        /* 8/16 */
+    }
+
+    &__title {
+        margin-bottom: 0.5em;
+
+        a {
+            color: $color_white;
+            font-weight: 500;
+            text-decoration: none;
+
+            font-family: $title_font_family;
+            font-size: 1.125em;
+            /* 18/16 */
+
+        }
+
+    }
+
+    &__text {
+        color: $color_white;
+
+    }
+
+    &__arrow {}
+
+    &__arrow_prev {}
+
+    &__arrow_next {}
+
+}
+
+.section {
+    &__title {}
+
+    &__button {}
+
+}
+
+.container_center {}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.icon-clock {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.btn {}
+
+.btn_transparent {}

@@ -1,0 +1,43 @@
+block variables
+    - var pageTitle = 'home';
+    - var tel = '+7 (967) 028-71-11';
+    - var path = '';
+
+    //- - var address = '<i class="icon_marker"></i> г. Королев, пр-т Космонавтов, 34б, ТЦ Юпитер, 2 этаж, пав. 213';
+    //- - var time = '<i class="icon_clock"></i> с 8:00 до 20:00';
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        link(rel="icon" href="favicon.ico")
+        //- link(rel="stylesheet", type="text/css", href="/css/animate.css")
+        link(rel="stylesheet", type="text/css", href=path + "css/swiper-bundle.min.css")
+        link(rel="stylesheet", type="text/css", href=path + "/css/style.css")
+
+        title !{pageTitle}
+    body.body
+        .wrapper
+
+            include header.pug
+            // begin main
+            main.main
+                block content
+            // end main
+
+            include footer.pug
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        script(src=path + "/js/fontsize.js")
+        script(src=path + "/js/changetheme.js")
+        script(src=path + "js/swiper-bundle.min.js") 
+        script(src=path + "/js/initsliders.js") 
+        //- script(src=path + "/js/timer.js") 
+        script(src=path + "/js/timer-2.js") 
+        //- script(src=path + "/js/countdown.js") 
+        //- script(src=path + "/js/jquery.countdown.min.js") 
+        //- script(src=path + "/js/jquery.countdown.js") 
+        script(src="/js/script.js")

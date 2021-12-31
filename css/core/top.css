@@ -1,0 +1,4 @@
+.top__bg {
+  background-image: image("./img/top.jpg");
+  padding-bottom: 50px;
+}

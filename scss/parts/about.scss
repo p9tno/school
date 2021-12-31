@@ -1,0 +1,227 @@
+.about {
+    &__wrap {
+
+        @media (min-width: 992px) {
+            min-height: 43.75em;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__content {
+        margin-bottom: 3em;
+        @media (min-width: 992px) {
+            margin-bottom: 0;
+            width: 33em;
+        }
+    }
+
+    .section__title {
+        margin-bottom: 0.75em;
+        @media (min-width: 992px) {
+            margin-bottom: 0.57143em;
+        }
+    }
+
+    &__text {
+        color: $color_black_light;
+        transition: color 0.3s;
+
+        margin-bottom: 1.5em;
+
+        @media (min-width: 992px) {
+            margin-bottom: 2.5em;
+
+        }
+
+        p {
+            margin: 0;
+            font-size: 1em;
+            margin-bottom: 1.5em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 1.125em;
+                line-height: 1.5;
+                margin-bottom: 1.7778em;
+            }
+        }
+
+    }
+
+    &__button {}
+
+    &__gallery {
+        position: relative;
+        overflow: hidden;
+
+        @media (min-width: 992px) {
+            overflow: inherit;
+
+            width: 41.875em;
+            min-height: 43.75em;
+        }
+    }
+
+}
+
+.info {
+    &_first {
+        margin-bottom: 2.5em;
+    }
+    @media (min-width: 992px) {
+        position: absolute;
+        width: 12.875em;
+
+        &_first {
+            margin-bottom: 0;
+            top: 1.875em;
+            left: 1.875em;
+        }
+
+        &_second {
+            right: 4.0625em;
+            bottom: 3.125em;
+
+        }
+    }
+
+    &__title {
+        font-family: $title_font_family;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: $color_info;
+        margin-bottom: 0.2em;
+    }
+
+    &__desc {
+        line-height: 1.5;
+        color: $color_black_light;
+        font-size: 1em;
+
+        transition: color 0.3s;
+
+        @media (min-width: 992px) {
+            font-size: 1.125em;
+        }
+
+    }
+
+}
+
+.gallery {
+    @media (max-width: 991px) {
+        position: relative;
+
+        display: flex;
+        padding: 2.5em 0;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        &__item {
+            margin-right: 1em;
+
+            .gallery__img {
+                width: 15.5em;
+                height: 18em;
+            }
+        }
+    }
+
+    &__item {
+        @media (min-width: 992px) {
+            position: absolute;
+
+            &:nth-child(1) {
+                bottom: 13.4375em;
+                left: 0;
+
+                .gallery__img {
+                    width: 14.0625em;
+                    height: 18.75em;
+                }
+            }
+
+            &:nth-child(2) {
+                bottom: 13.4375em;
+                right: 0;
+
+                .gallery__img {
+                    width: 25.9375em;
+                    height: 30em;
+                }
+            }
+
+            &:nth-child(3) {
+                bottom: 0;
+                left: 1.875em;
+
+                .gallery__img {
+                    width: 18.75em;
+                    height: 11.5625em;
+                }
+            }
+        }
+
+    }
+
+    &__img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0em 0em 1.25em rgba(0, 0, 0, 0.05));
+        border-radius: 1em;
+    }
+
+}
+
+.circle {
+    position: absolute;
+    z-index: -1;
+    // border: 1px solid #000;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_first {
+        top: 8em;
+        left: 7em;
+
+        width: 15em;
+        height: 15em;
+
+        @media (min-width: 992px) {
+            top: -4em;
+            left: -13em;
+
+            width: 30em;
+            height: 30em;
+
+        }
+    }
+
+    &_second {
+        bottom: -2em;
+        right: 2em;
+
+        width: 20em;
+        height: 20em;
+
+        @media (min-width: 992px) {
+            bottom: -8em;
+            right: -2em;
+
+            width: 40em;
+            height: 40em;
+
+        }
+    }
+
+}

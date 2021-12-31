@@ -1,0 +1,103 @@
+// start phone
+
+.phone {
+    color: $main_color;
+    transition: color 0.3s;
+
+    @media (min-width: 992px) {
+        min-width: 11.875em;
+        position: relative;
+        text-align: right;
+    }
+
+    &__item {
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 2.5em;
+            }
+
+        }
+    }
+
+    &__label {
+        font-size: 0.875em;
+        margin-right: 1.125em;
+        text-align: right;
+        margin-bottom: 0.625em;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $main_color;
+        font-weight: 600;
+        font-size: 1.25em;
+    }
+
+    &__drop {
+
+        @media (min-width: 992px) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            background-color: $color_white;
+            box-shadow: 0 0.125em 0.625em rgba(0, 0, 0, 0.25);
+            border-radius: 1em;
+            padding: 1em;
+            transition: 0.3s;
+
+            opacity: 0;
+            font-size: 0;
+            z-index: -1;
+
+            &_open {
+                opacity: 1;
+                font-size: $main_font_size;
+                bottom: -6.25em;
+                z-index: 2;
+            }
+        }
+    }
+
+    &__toggle {
+
+        @media (min-width: 992px) {
+            position: absolute;
+            top: -1px;
+            right: 0;
+
+            cursor: pointer;
+
+            i {
+                display: inline-block;
+                font-size: 0.75em;
+                color: $main_color;
+                transform: rotate(0deg);
+                transition: 0.3s;
+            }
+
+            &_open {
+                i {
+                    color: $color_success;
+                    transform: rotate(180deg);
+                }
+
+            }
+        }
+    }
+
+    &__address {
+        font-size: 0.875em;
+        margin-top: 0.5em;
+    }
+
+    .icon-phone {
+        color: $color_success;
+        font-size: 1.0625em;
+        margin-right: 0.5em;
+    }
+}
+
+// end phone

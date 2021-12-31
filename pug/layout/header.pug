@@ -1,0 +1,76 @@
+// begin header
+header.header
+    .header__inner
+        .header__logo
+            a.logo(href="/")
+                img(src="/img/logo.png", alt="alt")
+
+        .header__wrap
+            .header__top
+                .header__action
+                    .seach.desktop
+                        a.seach__link
+                            i.icon-search
+                    .change
+                        .switch
+                            label.switch__label
+                                input(type="checkbox" id="themeCheckbox" name="themeCheckbox")
+                                span
+                                    i
+
+                        .fontsize
+                            .fontsize__group
+                                button.fontsize__btn.increaseFont-js(type="submit") A+
+                                button.fontsize__btn.defaultFont-js(type="submit") A
+                                button.fontsize__btn.fontsize__btn_sm.decreaseFont-js(type="submit") A-
+
+                    .phone#phone
+                        .phone__item
+                            .phone__label.desktop 5-11 классы
+                            a.phone__link(href="tel:8 800 000 00 00")
+                                i.icon-phone.mobile
+                                span 8 800 000 00 00
+                            .phone__address.mobile Дровяная улица, дом 7а, литер А
+
+                        .phone__drop
+                            .phone__item
+                                .phone__label.desktop 4-5 классы
+                                a.phone__link(href="tel:+7 999 999 99 99")
+                                    i.icon-phone.mobile
+                                    span +7 999 999 99 99
+                                .phone__address.mobile Циолковского улица, дом 8, литер А
+
+                        .phone__toggle.desktop
+                            i.icon-arrow_bottom
+
+                nav.navbar.navbar_top
+                    ul.menu
+                        li.menu-item
+                            a(href="#") Сведения об образовательной организации
+                        li.menu-item
+                            a(href="#") Электронная приемная
+
+            .header__bottom
+                nav.navbar
+                    ul.menu
+                        li.menu-item
+                            a(href="#") Новости
+                        li.menu-item
+                            a(href="#") Объявления
+                        li.menu-item
+                            a(href="#") F.A.Q.
+                        li.menu-item
+                            a(href="#") Контакты
+                        li.menu-item.menu-item-has-children
+                            a(href="#") Важное
+                            ul.sub-menu
+                                each item in [1, 2, 3, 4, 5, 6, 7, 8 ]
+                                    li.menu-item
+                                        a Важный пункт меню
+
+    .seach.mobile
+        a.seach__link
+            i.icon-search
+
+    .header__toggle
+// end header
