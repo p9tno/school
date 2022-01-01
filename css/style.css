@@ -1434,6 +1434,9 @@ img {
   margin-right: 1em;
   width: 19em !important;
 }
+.ads .swiper-slide:last-child {
+  margin-right: 0;
+}
 @media (min-width: 992px) {
   .ads .swiper-slide {
     margin-right: 2em;
@@ -1444,6 +1447,9 @@ img {
   box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   min-height: 30.8125em;
+}
+.ads__item:hover .ads__title a {
+  color: #32C37A;
 }
 .ads__item_reverse .ads__bg {
   min-height: 12.8125em;

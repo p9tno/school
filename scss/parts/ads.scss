@@ -17,6 +17,11 @@
 
     .swiper-slide {
         margin-right: 1em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
         width: 19em!important;
 
         @media (min-width: 992px) {
@@ -30,6 +35,15 @@
         box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
         border-radius: 1em;
         min-height: 30.8125em;
+
+        &:hover {
+            .ads__title {
+                a {
+                    color: $color_success;
+                }
+            }
+
+        }
 
         &_reverse {
             .ads__bg {
