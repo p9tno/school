@@ -1,4 +1,5 @@
 .ads {
+    position: relative;
     overflow: hidden;
     background-color: #F3F4F5;
 
@@ -6,15 +7,55 @@
         overflow: inherit;
     }
 
-    .swiper-slide {
-        margin-right: 2em;
+    .swiper-wrapper {
+        @media (max-width: 991px) {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 2.5em;
+        }
     }
 
-    &__item {}
+    .swiper-slide {
+        margin-right: 1em;
+        width: 19em!important;
+
+        @media (min-width: 992px) {
+            margin-right: 2em;
+        }
+
+    }
+
+    &__item {
+        background-color: $color_white;
+        box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        min-height: 30.8125em;
+
+        &_reverse {
+            .ads__bg {
+                min-height: 12.8125em;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .ads__date {
+                color: $color_info;
+            }
+
+            .ads__title {
+                a {
+                    color: $main_color;
+                }
+            }
+
+            .ads__text {
+                color: $color_black_light;
+            }
+        }
+    }
 
     &__bg {
         position: relative;
-        padding: 1em 1em 1.5em;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -26,17 +67,17 @@
         display: flex;
         align-items: flex-end;
 
-        // &:after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     display: block;
-        //     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 57.4%, rgba(0, 0, 0, 0.5) 100%);
-        //
-        // }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 57.4%, rgba(0, 0, 0, 0.5) 100%);
+
+        }
 
     }
 
@@ -56,7 +97,6 @@
 
         font-size: 0.875em;
         margin-right: 1.572em;
-        /* 22/16 */
 
         color: $color_white;
         background-color: $color_danger;
@@ -66,6 +106,8 @@
 
     &__content {
         position: relative;
+        padding: 1.5em 1em;
+
         z-index: 1;
     }
 
@@ -73,11 +115,12 @@
         color: $color_white;
         font-weight: 500;
         margin-bottom: 0.5em;
-        /* 8/16 */
     }
 
     &__title {
         margin-bottom: 0.5em;
+        width: 16.25em;
+        line-height: 1.3;
 
         a {
             color: $color_white;
@@ -86,46 +129,60 @@
 
             font-family: $title_font_family;
             font-size: 1.125em;
-            /* 18/16 */
 
         }
 
     }
 
     &__text {
+        line-height: 1.3;
         color: $color_white;
 
     }
 
-    &__arrow {}
+    .ads__arrow_next,
+    .ads__arrow_prev {
+        border-color: $color_grey;
+        color: $color_success;
+        top: -6em;
+    }
 
-    &__arrow_prev {}
+    &__arrow_prev {
+        right: 4.5em;
+        left: auto;
+    }
 
     &__arrow_next {}
 
+    &__circle {
+        position: absolute;
+
+        width: 95em;
+        height: 60em;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_left {
+            top: -20em;
+            left: -20em;
+            @media (min-width: 992px) {
+                top: 0;
+                left: 0;
+
+            }
+        }
+
+        &_right {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .btn {
+        position: relative;
+        z-index: 1;
+    }
+
 }
-
-.section {
-    &__title {}
-
-    &__button {}
-
-}
-
-.container_center {}
-
-.swiper-container {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.icon-clock {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
-
-.btn {}
-
-.btn_transparent {}

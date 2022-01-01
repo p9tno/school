@@ -15,8 +15,8 @@ block content
                                     .slider__button
                                         a.btn(href="#") Целевое действие
 
-            .swiper-button-prev.slider__arrow.slider__arrow_prev
-            .swiper-button-next.slider__arrow.slider__arrow_next
+            .swiper-button-prev.slider__arrow_prev
+            .swiper-button-next.slider__arrow_next
             .swiper-pagination
     // end slider
 
@@ -155,55 +155,154 @@ block content
                 .swiper-wrapper
                     //- slide start
                     .swiper-slide
-                        .ads__bg(style="background-image: url('img/ads/ads-1-min.jpg')")
-                            .ads__action
-                                .ads__category важно
-                                .ads__timer
-                                    .timer(data-deadline='2022-01-26')
-                                        .timer__block
-                                            span.days_js дней
-                                        .timer__block
-                                            span.hours_js часов
-                                        .timer__block
-                                            span.minutes_js минут
-                                        .timer__block
-                                            span.seconds_js секунд
-                            .ads__content
-                                .ads__date 18 июня 2021
-                                .ads__title
-                                    a(href="#") Петербургский международный образовательный форум-2021   
-                                .ads__text научно-практической конференции «Образовательная коммуникация в пространстве современной школы: открытость и инновации»
+                        .ads__item
+                            .ads__bg(style="background-image: url('img/ads/ads-1-min.jpg')")
+                                .ads__action
+                                    .ads__category важно
+                                    //- .ads__timer
+                                    //-     .timer(data-deadline='2022-01-26')
+                                    //-         .timer__block
+                                    //-             span.days_js дней
+                                    //-         .timer__block
+                                    //-             span.hours_js часов
+                                    //-         .timer__block
+                                    //-             span.minutes_js минут
+                                    //-         .timer__block
+                                    //-             span.seconds_js секунд
+                                .ads__content
+                                    .ads__date 18 июня 2021
+                                    .ads__title
+                                        a(href="#") Петербургский международный образовательный форум-2021   
+                                    .ads__text научно-практической конференции «Образовательная коммуникация в пространстве современной школы: открытость и инновации»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item
+                            .ads__bg(style="background-image: url('img/ads/ads-2-min.jpg')")
+                                .ads__action
+                                    .ads__category важно
+                                .ads__content
+                                    .ads__date 17 июня 2021
+                                    .ads__title
+                                        a(href="#") Вакцинация от COVID-19
+                                    .ads__text Показательный пример – действие гомогенно начинает когнитивный гомеостаз.
                     //- slide end
 
                     //- slide start
                     .swiper-slide
-                        .ads__bg(style="background-image: url('img/ads/ads-2-min.jpg')")
-                            .ads__action
-                                .ads__category важно
-                                .ads__timer
-                                    .timer(data-deadline='2023-11-31')
-                                        .timer__block
-                                            span.days_js дней
-                                        .timer__block
-                                            span.hours_js часов
-                                        .timer__block
-                                            span.minutes_js минут
-                                        .timer__block
-                                            span.seconds_js секунд
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
                             .ads__content
-                                .ads__date 18 июня 2021
+                                .ads__date 1 июня 2021
                                 .ads__title
-                                    a(href="#") Петербургский международный образовательный форум-2021   
-                                .ads__text научно-практической конференции «Образовательная коммуникация в пространстве современной школы: открытость и инновации»
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-4-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Открытый урок и Всероссийское родительского онлайн-собрания
+                                .ads__text Открытый онлайн-урок, посвященный Дню воссоединения Крыма с Россией
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+
+                    //- slide start
+                    //- .swiper-slide
+                    //-     .ads__bg(style="background-image: url('img/ads/ads-2-min.jpg')")
+                    //-         .ads__action
+                    //-             .ads__category важно
+                    //- 
+                    //-         .ads__content
+                    //-             .ads__date 18 июня 2021
+                    //-             .ads__title
+                    //-                 a(href="#") Петербургский международный образовательный форум-2021   
+                    //-             .ads__text научно-практической конференции «Образовательная коммуникация в пространстве современной школы: открытость и инновации»
                     //- slide end
 
 
 
-                .swiper-button-prev.ads__arrow.ads__arrow_prev
-                .swiper-button-next.ads__arrow.ads__arrow_next
+                .swiper-button-prev.ads__arrow_prev
+                .swiper-button-next.ads__arrow_next
 
             .section__button
                 a.btn.btn_transparent(href="#") Смотреть все события
+
+        .ads__circle.ads__circle_left(style="background-image: url('img/ads/ads_circle_left-min.png')")
+
+        .ads__circle.ads__circle_right.desktop(style="background-image: url('img/ads/ads_circle_right-min.png')")
+
+
+
+
+
+
     // end ads
 
     //- <div class="timer timer-1">

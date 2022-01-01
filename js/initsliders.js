@@ -26,33 +26,52 @@ $(document).ready(function() {
 
 // start ads
 $(document).ready(function() {
-    const ads = new Swiper('#ads', {
-        // slidesPerView: 6,
-        // spaceBetween: 32,
-        slidesPerView: 4,
-        // centeredSlides: true,
-        // slidesPerGroupSkip: 1,
-        // grabCursor: true,
-        // keyboard: {
-        //   enabled: true
-        // },
-        //    // grabCursor: true,
+    let ads = null;
+    let mediaQuerySize = 992;
 
-        navigation: {
-            nextEl: '.ads__arrow_next',
-            prevEl: '.ads__arrow_prev',
-        },
+    function initSlidet () {
+        if (!ads) {
+            console.log("ADS Slider on");
+            ads = new Swiper('#ads', {
 
-        // scrollbar: {
-        //  el: ".swiper-scrollbar",
-        // },
+                // Optional parameters
+                slidesPerView: 4,
 
-        autoplay: {
-            delay: 300000,
-        },
+                speed: 300,
 
-        speed: 300,
+                navigation: {
+                    nextEl: '.ads__arrow_next',
+                    prevEl: '.ads__arrow_prev',
+                },
 
-    })
+
+
+            });
+        }
+    }
+
+    function destroySlider () {
+        if (ads) {
+            console.log("ADS Slider of");
+            ads.destroy();
+            ads = null;
+        }
+    }
+
+    $(window).on('load resize', function () {
+        // Берём текущую ширину экрана
+        let windowWidth = $(this).innerWidth();
+        // console.log(windowWidth);
+
+        // Если ширина экрана больше или равна mediaQuerySize
+        if (windowWidth >= mediaQuerySize) {
+            // Инициализировать слайдер если он ещё не был инициализирован
+            initSlidet()
+        } else {
+            // Уничтожить слайдер если он был инициализирован
+            destroySlider()
+        }
+    });
+
 });
 // end ads
