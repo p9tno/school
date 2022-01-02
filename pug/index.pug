@@ -298,11 +298,6 @@ block content
 
         .ads__circle.ads__circle_right.desktop(style="background-image: url('img/ads/ads_circle_right-min.png')")
 
-
-
-
-
-
     // end ads
 
     //- <div class="timer timer-1">
@@ -411,41 +406,160 @@ block content
 
     // end tabsPreview
 
-    // begin dropPreview
-    //- section#dropPreview.dropPreview.section
-    //-     h2.section__title dropPreview
-    //-     .dropPreview__content
-    //-         .drop
-    //-             .drop__toggle Click me
-    //-             .drop__list
-    //-                 .drop__item Item 1
-    //-                 .drop__item Item 2
-    //-                 .drop__item Item 3
-    //-                 .drop__item Item 4
-    //- 
-    //-         .drop
-    //-             .drop__toggle Click me
-    //-             .drop__list
-    //-                 .drop__item Item 1
-    //-                 .drop__item Item 2
-    //-                 .drop__item Item 3
-    //-                 .drop__item Item 4
-    //-     .content
-    //-         p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim placeat, incidunt unde esse officiis iusto tempora cum saepe, repellendus alias non! Deleniti eius accusamus molestiae! Quo rerum, modi omnis sequi, autem molestias saepe inventore nihil animi voluptas, eaque quia laboriosam dolor, magni ea et error blanditiis tempora deserunt sint repellendus in! Blanditiis, mollitia provident in omnis rerum, magnam ipsa, reiciendis laborum unde, error illum quod. Vero eveniet, nesciunt blanditiis laudantium a ab adipisci saepe perspiciatis ducimus quos quaerat, pariatur necessitatibus illo praesentium. Excepturi veniam neque asperiores temporibus nostrum vitae distinctio eum alias hic molestiae, iste suscipit, voluptate sit dolores accusamus.
-    //-         p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim placeat, incidunt unde esse officiis iusto tempora cum saepe, repellendus alias non! Deleniti eius accusamus molestiae! Quo rerum, modi omnis sequi, autem molestias saepe inventore nihil animi voluptas, eaque quia laboriosam dolor, magni ea et error blanditiis tempora deserunt sint repellendus in! Blanditiis, mollitia provident in omnis rerum, magnam ipsa, reiciendis laborum unde, error illum quod. Vero eveniet, nesciunt blanditiis laudantium a ab adipisci saepe perspiciatis ducimus quos quaerat, pariatur necessitatibus illo praesentium. Excepturi veniam neque asperiores temporibus nostrum vitae distinctio eum alias hic molestiae, iste suscipit, voluptate sit dolores accusamus.
+    // begin photoGallery
+    section#photoGallery.photoGallery.section
+        .container_center
+            h2.section__title Галерея фото
+            .tabs
+                .swiper-container#tabs
+                    .swiper-wrapper
+                        .swiper-slide
+                            .tabs__item.active(data-tab="#plate-1") Последний звонок 2021
+                        .swiper-slide
+                            .tabs__item(data-tab="#plate-2") Школьные олимпиады
+                        .swiper-slide
+                            .tabs__item(data-tab="#plate-3") Спортивные мероприятия
+                        .swiper-slide
+                            .tabs__item(data-tab="#plate-4") Учебные будни
+                        .swiper-slide
+                            .tabs__item(data-tab="#plate-5") Театральная студия
+                        .swiper-slide
+                            .tabs__item(data-tab="#plate-6") Концерты
+                        .swiper-slide
+                            .tabs__item(data-tab="#plate-7") Учебные будни
 
-    // end dropPreview
+                .swiper-button-prev.photoGallery__arrow_prev
+                .swiper-button-next.photoGallery__arrow_next
 
-    // begin sliderPreview
-    //- section#sliderPreview.sliderPreview.section
-    //-     h2.section__title sliderPreview
-    //-     .sliderPreview__content
-    //- 
-    //-         .slider.js-slider
-    //-             each item in [1, 2, 3, 4]
-    //-                 .slider__item
-    //-                     .content
-    //-                         h1=item
+            .tabContent
+                .tabContent__item.active#plate-1
+                    .photoGallery__grid
+                        .photoGallery__item.video__wrapper.js-youtube#QEPbamO8i9s
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-4-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
 
 
-    // end sliderPreview
+                .tabContent__item#plate-2
+                    .photoGallery__grid
+                        .photoGallery__item(style="background-image: url('img/slider-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
+                        .photoGallery__item(style="background-image: url('img/ads/ads-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/ads/ads-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+
+
+                .tabContent__item#plate-3
+                    .photoGallery__grid
+                        .photoGallery__item.video__wrapper.js-youtube#QEPbamO8i9s
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-4-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
+
+                .tabContent__item#plate-4
+                    .photoGallery__grid
+                        .photoGallery__item(style="background-image: url('img/slider-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
+                        .photoGallery__item(style="background-image: url('img/ads/ads-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/ads/ads-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+
+                .tabContent__item#plate-5
+                    .photoGallery__grid
+                        .photoGallery__item.video__wrapper.js-youtube#QEPbamO8i9s
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-4-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
+
+                .tabContent__item#plate-6
+                    .photoGallery__grid
+                        .photoGallery__item(style="background-image: url('img/slider-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
+                        .photoGallery__item(style="background-image: url('img/ads/ads-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/ads/ads-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+
+                .tabContent__item#plate-7
+                    .photoGallery__grid
+                        .photoGallery__item.video__wrapper.js-youtube#QEPbamO8i9s
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-2-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-3-min.jpg')")
+                        .photoGallery__item(style="background-image: url('img/gallery/gallery-4-min.jpg')")
+                        .photoGallery__item.video__wrapper.js-youtube#HM37_IkNGUA
+
+    // end gallery
+
+    // begin teachers
+    section#teachers.teachers.section
+        .container_center
+            h2.section__title Наши педагоги
+            .tabs
+                .swiper-container#teachers
+                    .swiper-wrapper
+                        .swiper-slide
+                            .tabs__item_teachers.active(data-tab="#plate_teachers_0") Все
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_1") Математика
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_2") Русский
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_3") Литература
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_4") Физика
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_5") Химия
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_6") Биология
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_7") Информатика
+                        .swiper-slide
+                            .tabs__item_teachers(data-tab="#plate_teachers_8") География
+
+                .swiper-button-prev.teachers__arrow_prev
+                .swiper-button-next.teachers__arrow_next
+
+            .tabContent
+                .tabContent__item_teachers.active#plate_teachers_0
+                    .teachers__grid
+                        each item in [{ name: 'Константинопольская Мария Ивановна', subject: 'Математика', bg: '1' }, { name: 'Иванова Дарья Петровна', subject: 'Литература', bg: '2' }, { name: 'Спицына София Иосифовна', subject: 'Биология', bg: '3' }, { name: 'Константинопольская Мария Ивановна', subject: 'Математика', bg: '4' }, { name: 'Петров Иван Васильевич', subject: 'Литература', bg: '5' }, { name: 'Романова Ольга Константиновна', subject: 'Биология', bg: '6' },]
+
+                            .teachers__item(style="background-image: url('img/teachers/teachers-"+item.bg+"-min.jpg')")
+                                .teachers__content
+                                    .teachers__name
+                                        span= item.name
+                                    .teachers__subject
+                                        span.teachers__label Предмет:
+                                        span.teachers__title= item.subject
+                                    .teachers__blog
+                                        span.teachers__label Личный блог:
+                                        a.teachers__link(href="#") Название блога
+                                    .teachers__attribute
+                                        span.teachers__label Доп. атрибут:
+                                        span.teachers__title Название
+
+                .tabContent__item_teachers#plate_teachers_1
+                    .teachers__grid
+                        .teachers__item(style="background-image: url('img/teachers/teachers-2-min.jpg')")
+                            .teachers__content
+                                .teachers__name
+                                    span Иванова Дарья Петровна
+                                .teachers__subject
+                                    span.teachers__label Предмет:
+                                    span.teachers__title Физика
+                                .teachers__blog
+                                    span.teachers__label Личный блог:
+                                    a.teachers__link(href="#") Название блога
+                                .teachers__attribute
+                                    span.teachers__label Доп. атрибут:
+                                    span.teachers__title Название
+
+            .section__button
+                a.btn(href="#") Загрузить еще
+
+        .teachers__circle.teachers__circle_left.desktop(style="background-image: url('img/teachers/teachers_ellipse_1-min.png')")
+        .teachers__circle.teachers__circle_right.desktop(style="background-image: url('img/circle_2-min.png')")
+
+    // end teachers

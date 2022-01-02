@@ -52,6 +52,43 @@ $(document).ready(function () {
 
 });
 
+// Видео youtube для страницы
+function uploadYoutubeVideo() {
+    if ( $( ".js-youtube" ) ) {
+
+        $( ".js-youtube" ).each( function () {
+            // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
+            $( this ).css( 'background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)' );
+
+            // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
+            $( this ).append( $( '<img src="img/play.png" alt="Play" class="video__play">' ) );
+
+        } );
+
+        $( '.video__play, .video__prev' ).on( 'click', function () {
+            // создаем iframe со включенной опцией autoplay
+            let wrapp = $( this ).closest( '.js-youtube' ),
+                videoId = wrapp.attr( 'id' ),
+                iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
+
+            if ( $( this ).data( 'params' ) ) iframe_url += '&' + $( this ).data( 'params' );
+
+            // Высота и ширина iframe должны быть такими же, как и у родительского блока
+            let iframe = $( '<iframe/>', {
+                'frameborder': '0',
+                'src': iframe_url,
+                'allow': "autoplay"
+            } )
+
+            // Заменяем миниатюру HTML5 плеером с YouTube
+            $( this ).closest( '.video__wrapper' ).append( iframe );
+
+        } );
+    }
+};
+
+uploadYoutubeVideo();
+
 
 // $(document).ready(function() {
 //     function onVisible( selector, callback, repeat = false ) {
@@ -186,16 +223,28 @@ activeNav();
 // });
 
 
-// function doTabs() {
-//     $('.tabs__item').on('click', function() {
-//         $('.tabs__item').removeClass('active');
-//         $(this).addClass('active');
-//
-//         $('.tabContent__item').removeClass('active');
-//         $($(this).data('tab')).addClass('active');
-//     });
-// };
-// doTabs()
+function doTabs() {
+    $('.tabs__item').on('click', function() {
+        $('.tabs__item').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tabContent__item').removeClass('active');
+        $($(this).data('tab')).addClass('active');
+    });
+};
+doTabs()
+
+function doTabsTeachers() {
+    $('.tabs__item_teachers').on('click', function() {
+        $('.tabs__item_teachers').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tabContent__item_teachers').removeClass('active');
+        $($(this).data('tab')).addClass('active');
+    });
+};
+doTabsTeachers()
+
 
 
 // function doDrop() {

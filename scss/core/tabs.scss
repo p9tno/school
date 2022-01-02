@@ -1,0 +1,92 @@
+.tabs {
+
+    @media (min-width: 992px) {
+        position: relative;
+        padding: 0 3.5em;
+
+    }
+
+    .swiper-slide {
+        margin-right: 1em;
+        width: auto!important;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .swiper-wrapper {
+        @media (max-width: 991px) {
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding-bottom: 1.25em;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 54%;
+        border-color: $color_grey;
+        color: $color_success;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .tabs__item,
+    .tabs__item_teachers {
+        padding: 0.66em 0.75em;
+        border-radius: 3em;
+        background-color: rgba($color_success, 0.1);
+        color: $color_success;
+        font-weight: 500;
+        cursor: pointer;
+
+        transition: color 0.3s, background-color 0.3s;
+
+        margin-right: 1em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: #eee;
+        }
+
+        &.active,
+        &:hover {
+            background-color: rgba($color_success, 1);
+            color: $color_white;
+        }
+    }
+
+}
+
+.tabContent {
+    padding-top: 1.25em;
+    @media (min-width: 992px) {
+        padding-top: 2.5em;
+    }
+
+    .tabContent__item,
+    .tabContent__item_teachers {
+        // display: none;
+        font-size: 0;
+        opacity: 0;
+        transition: 0.3s;
+
+        &.active {
+            // display: block;
+            font-size: 1em;
+            opacity: 1;
+        }
+    }
+}

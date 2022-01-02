@@ -7,7 +7,7 @@
 @import 'core/reset';
 @import 'core/dark';
 
-@import 'core/template';
+// @import 'core/template';
 
 @import 'parts/header';
 @import 'parts/slider';
@@ -15,11 +15,13 @@
 @import 'parts/news';
 @import 'parts/portal';
 @import 'parts/ads';
+@import 'parts/photoGallery';
+@import 'parts/teachers';
+
 @import 'parts/footer';
 
 // @import 'core/form';
 // @import 'core/modal';
-// @import 'core/tabs';
 // @import 'core/drop';
 // @import 'core/pagination';
 // @import 'core/slick';
@@ -29,7 +31,11 @@
 @import 'core/fontsize';
 @import 'core/seach';
 @import 'core/phone';
+@import 'core/tabs';
 @import 'core/swiper';
+@import 'core/video';
+
+@import 'core/template';
 
 .promotion__descr span {
     font-weight: 700;

@@ -75,3 +75,117 @@ $(document).ready(function() {
 
 });
 // end ads
+
+// start tabs
+$(document).ready(function() {
+    let tabs = null;
+    let mediaQuerySize = 992;
+
+    function initSlidet () {
+        if (!tabs) {
+            console.log("tabs Slider on");
+
+            tabs = new Swiper('#tabs', {
+
+                slidesPerView: 6,
+                slidesPerGroup: 2,
+                freeMode: true,
+                // loop: true,
+
+                // autoplay: {
+                //     delay: 300000,
+                // },
+
+                speed: 300,
+
+                navigation: {
+                    nextEl: '.photoGallery__arrow_next',
+                    prevEl: '.photoGallery__arrow_prev',
+                },
+
+            });
+        }
+    }
+
+    function destroySlider () {
+        if (tabs) {
+            console.log("tabs Slider of");
+            tabs.destroy();
+            tabs = null;
+        }
+    }
+
+    $(window).on('load resize', function () {
+        // Берём текущую ширину экрана
+        let windowWidth = $(this).innerWidth();
+        // console.log(windowWidth);
+
+        // Если ширина экрана больше или равна mediaQuerySize
+        if (windowWidth >= mediaQuerySize) {
+            // Инициализировать слайдер если он ещё не был инициализирован
+            initSlidet()
+        } else {
+            // Уничтожить слайдер если он был инициализирован
+            destroySlider()
+        }
+    });
+
+});
+// end tabs
+
+// start teachers
+$(document).ready(function() {
+    let teachers = null;
+    let mediaQuerySize = 992;
+
+    function initSlidet () {
+        if (!teachers) {
+            console.log("teachers Slider on");
+
+            teachers = new Swiper('#teachers', {
+
+                slidesPerView: 10,
+                slidesPerGroup: 1,
+                freeMode: true,
+                // loop: true,
+
+                // autoplay: {
+                //     delay: 300000,
+                // },
+
+                speed: 300,
+
+                navigation: {
+                    nextEl: '.teachers__arrow_next',
+                    prevEl: '.teachers__arrow_prev',
+                },
+
+            });
+        }
+    }
+
+    function destroySlider () {
+        if (teachers) {
+            console.log("teachers Slider of");
+            teachers.destroy();
+            teachers = null;
+        }
+    }
+
+    $(window).on('load resize', function () {
+        // Берём текущую ширину экрана
+        let windowWidth = $(this).innerWidth();
+        // console.log(windowWidth);
+
+        // Если ширина экрана больше или равна mediaQuerySize
+        if (windowWidth >= mediaQuerySize) {
+            // Инициализировать слайдер если он ещё не был инициализирован
+            initSlidet()
+        } else {
+            // Уничтожить слайдер если он был инициализирован
+            destroySlider()
+        }
+    });
+
+});
+// end teachers
