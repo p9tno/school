@@ -106,9 +106,11 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if($(window).scrollTop()>2000){
-			$('#toTop').fadeIn(900)
+			// $('#toTop').fadeIn(900)
+			$('#toTop').addClass('active')
 		}else{
-			$('#toTop').fadeOut(700)
+			// $('#toTop').fadeOut(700)
+			$('#toTop').removeClass('active')
 		}
 	});
 });

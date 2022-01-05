@@ -1,22 +1,28 @@
 .toTop {
-    display: none;
     position: fixed;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
 
     z-index: 11;
     overflow: hidden;
-    transition: 0.3s;
 
     right: 0.75em;
     bottom: 2.5em;
+
     width: 3em;
     height: 3em;
+
+    font-size: 0;
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
     @media (min-width: 992px) {
         right: 6em;
         bottom: 29em;
+
         width: 3.75em;
         height: 3.75em;
     }
@@ -42,7 +48,6 @@
     }
 
     a {
-        // border: 1px solid #000;
         text-decoration: none;
         display: inline-flex;
         transform: rotate(-90deg);
@@ -57,5 +62,10 @@
             font-size: 1.937em;
 
         }
+    }
+
+    &.active {
+        font-size: inherit;
+        opacity: 1;
     }
 }
