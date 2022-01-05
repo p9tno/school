@@ -1,7 +1,15 @@
 // start header
 
+.dark_theme .wrapper {
+    background-color: $main_color_dark;
+    color: $color_white;
+
+}
+
 .dark_theme .header {
     background-color: $main_color_dark;
+    box-shadow: 0 0.125em 1.25em rgba($color_white, 0.1);
+
 }
 
 .dark_theme .header__top {
@@ -147,3 +155,23 @@
 }
 
 // end footer
+
+// start search
+.dark_theme .search__link {
+    a {
+        color: $color_white;
+
+    }
+}
+
+.dark_theme .search__input {
+    color: rgba($color_white , .8);
+
+    &:hover,
+    :active,
+    :focus,
+    :visited {
+        color: $color_white;
+    }
+}
+// end search

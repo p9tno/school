@@ -35,9 +35,15 @@ body {
 
 .wrapper {
     font-size: $main_font_size;
+    color: $main_color;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
+    background-color: $color_white;
+
+    transition: background-color 0.3s, color 0.3s;
+
 }
 
 .main {
@@ -78,6 +84,10 @@ body {
         @media (min-width: 992px) {
             font-size: 3.5em;
             margin-bottom: 1.07143em;
+
+            &_sm {
+                margin-bottom: 0.71428em;
+            }
         }
 
         transition: color 0.3s;

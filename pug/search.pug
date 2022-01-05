@@ -1,0 +1,29 @@
+extends layout/layout.pug
+
+block content
+    // begin search
+    section#search.search.section
+        .container_center
+            h2.section__title.section__title_sm Поиск по сайту
+            .search__content
+                form.search__form
+                    input.search__input(type="text" placeholder="Поисковый запрос")
+
+                .search__result
+                    span Найдено: 608 результатов
+
+                each item in [1,2,3,4,5,6,7,8,9,0]
+                    .search__item
+                        .search__title
+                            span Поисковый запрос
+                        .search__text
+                            p Стратегический рыночный план порождает институциональный пресс-клиппинг. Торговая марка подсознательно масштабирует коллективный бизнес-план. Практика однозначно показывает, что воздействие на потребителя масштабирует ребрендинг. Маркетингово- ориентированное издание определяет стратегический формат события. Социальный статус решительно ускоряет стратегический рыночный план, невзирая на действия конкурентов.
+                        .search__link
+                            a(href="#") Подробнее
+
+
+
+                .section__button
+                    a.btn.btn_transparent(href="#") Смотреть все новости
+
+    // end search
