@@ -10,6 +10,7 @@
 
 .dark_theme .sub-menu {
     background-color: rgba($main_color_dark, 0.9);
+    // background-color: rgba($main_color_dark, 1);
 }
 
 .dark_theme .menu-item-has-children {
@@ -124,3 +125,25 @@
 }
 
 // end main
+
+// start footer
+.dark_theme .footer {
+    background-color: $main_color_dark;
+}
+
+.dark_theme .footer__inner {
+    border-color: $color_black_light;
+}
+
+.dark_theme .footer__copyright,
+.dark_theme .footer__institution {
+    color: $color_white;
+}
+
+.dark_theme .toTop {
+    a {
+        color: $main_color_dark;
+    }
+}
+
+// end footer

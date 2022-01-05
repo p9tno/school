@@ -189,3 +189,13 @@ $(document).ready(function() {
 
 });
 // end teachers
+
+
+// if ($(".photoGallery__arrow_prev").hasClass('swiper-button-disabled')) {
+// // есть класс
+//     console.log('есть класс');
+// } else {
+//     console.log('нет класса');
+// }
+//
+// console.log($(".photoGallery__arrow_prev"));

@@ -563,3 +563,18 @@ block content
         .teachers__circle.teachers__circle_right.desktop(style="background-image: url('img/circle_2-min.png')")
 
     // end teachers
+
+    // begin partners
+    section#partners.partners.section
+        .container_center
+            h2.section__title Мы - участники
+            .partners__grid
+                each item in [0,1,2,4,5,6,7,8,9,0,1,2,3,4,5]
+                    .partners__img
+                        img(src="img/partners/partners_"+item+"-min.png", alt="alt")
+
+            .partners__circle(style="background-image: url('img/circle_2-min.png')")
+
+
+
+    // end partners

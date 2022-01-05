@@ -5,7 +5,6 @@
 @import "../fonts/icon/style.css";
 
 @import 'core/reset';
-@import 'core/dark';
 
 // @import 'core/template';
 
@@ -17,6 +16,7 @@
 @import 'parts/ads';
 @import 'parts/photoGallery';
 @import 'parts/teachers';
+@import 'parts/partners';
 
 @import 'parts/footer';
 
@@ -34,8 +34,11 @@
 @import 'core/tabs';
 @import 'core/swiper';
 @import 'core/video';
+@import 'core/social';
 
 @import 'core/template';
+@import 'core/dark';
+@import 'core/arrowToTop';
 
 .promotion__descr span {
     font-weight: 700;

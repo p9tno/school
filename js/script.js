@@ -89,6 +89,32 @@ function uploadYoutubeVideo() {
 
 uploadYoutubeVideo();
 
+// scrollTop
+$(document).ready(function(){
+    //отменяем стандартную обработку нажатия по ссылке
+    $("#menuHeader,#goForm,#menuFooter,#toTop").on("click","a", function (event) {
+        event.preventDefault();
+        //забираем идентификатор блока с атрибута href
+        let id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>2000){
+			$('#toTop').fadeIn(900)
+		}else{
+			$('#toTop').fadeOut(700)
+		}
+	});
+});
+
+// end scrollTop
+
 
 // $(document).ready(function() {
 //     function onVisible( selector, callback, repeat = false ) {

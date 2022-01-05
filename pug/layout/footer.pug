@@ -1,10 +1,90 @@
-//// begin footer
+// begin footer
 
 footer.footer#footer
     .container_center
-        p
-            | &copy; 2020 |
-            a(href='#') View Source
+        .footer__inner
+            .footer__row
+                .footer__col
+                    .footer__institution
+                        .footer__title
+                            span Гимназия №278
+                        .footer__subtitle
+                            span имени Б.Б. Голицына
+                    .footer__social
+                        .social
+                            .social__item
+                                a.social__link.icon-vk(href="#")
+                            .social__item
+                                a.social__link.icon-facebook(href="#")
+                            .social__item
+                                a.social__link.icon-youtube(href="#")
+                            .social__item
+                                a.social__link.icon-twitter(href="#")
+                    .footer__data
+                        a.footer__link(href="#") Обработка персональных данных
+
+                .footer__col
+                    .footer__naw
+                        nav.navbar
+                            ul.menu
+                                li.menu-item
+                                    a(href="#") Сведения о образовательной организации
+                                li.menu-item
+                                    a(href="#") Электронная приемная
+                                li.menu-item
+                                    a(href="#") Новости
+                                li.menu-item
+                                    a(href="#") Объявления
+                                li.menu-item
+                                    a(href="#") Контакты
+                        nav.navbar
+                            ul.menu
+                                li.menu-item
+                                    a(href="#") F.A.Q.
+                                li.menu-item.menu-item-has-children
+                                    a(href="#") Важное
+                                    ul.sub-menu
+                                        each item in [1, 2, 3, 4]
+                                            li.menu-item
+                                                a(href="#") Пункт меню
+
+                .footer__col
+                    .phone.phone_footer
+                        .phone__item.phone__item_footer
+                            a.phone__link(href="tel:8 800 000 00 00")
+                                i.icon-phone
+                                span 8 800 000 00 00
+                            .phone__address Дровяная улица, дом 7а, литер А
+
+                        .phone__item.phone__item_footer
+                            a.phone__link(href="tel:+7 999 999 99 99")
+                                i.icon-phone
+                                span +7 999 999 99 99
+                            .phone__address Циолковского улица, дом 8, литер А
+
+                .footer__col
+                    .footer__action
+                        .fontsize
+                            .fontsize__group
+                                button.fontsize__btn.increaseFont-js(type="submit") A+
+                                button.fontsize__btn.defaultFont-js(type="submit") A
+                                button.fontsize__btn.fontsize__btn_sm.decreaseFont-js(type="submit") A-
+
+                        .switch
+                            label.switch__label
+                                input(type="checkbox" id="themeCheckbox" name="themeCheckbox")
+                                span
+                                    i
+
+
+            .footer__row
+                .footer__copyright
+                    span © 2009-2017 ГБОУ Гимназия №278. Адмиралтейского района Санкт-Петербурга
+
+                .footer__info
+                    a.footer__link(href="#") Карта сайта
+                    a.footer__link(href="#") Сообщить об ошибке на сайте
+
 
 
 // end footer

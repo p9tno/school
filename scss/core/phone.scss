@@ -8,16 +8,37 @@
         min-width: 11.875em;
         position: relative;
         text-align: right;
+
+        &_footer {
+            text-align: left;
+            position: static;
+            min-width: auto;
+        }
     }
 
     &__item {
         @media (max-width: 991px) {
-            margin-bottom: 30px;
+            margin-bottom: 1.875em;
 
             &:last-child {
                 margin-bottom: 2.5em;
             }
+        }
 
+        &_footer {
+            &:first-child {
+                margin-bottom: 2em;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 992px) {
+                &:first-child {
+                    margin-bottom: 3.5em;
+                }
+            }
         }
     }
 
