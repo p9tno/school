@@ -1850,7 +1850,7 @@ template {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
   }
 }
 .informationTabs__item {
