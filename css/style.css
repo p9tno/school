@@ -1683,42 +1683,6 @@ template {
   }
 }
 
-.search__form {
-  margin-bottom: 2.5em;
-}
-.search__input {
-  width: 100%;
-  background-color: inherit;
-  color: rgba(36, 35, 37, 0.8);
-  border: 0.063em solid #C2C0C4;
-  padding: 0.833em 1em;
-  outline: none;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: "Open Sans";
-  border-radius: 1em;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.search__input:hover,
-.search__input :active,
-.search__input :focus,
-.search__input :visited {
-  border-color: rgba(50, 195, 122, 0.7);
-  color: #242325;
-}
-.search__input::-webkit-input-placeholder {
-  color: #C2C0C4;
-}
-.search__input:-moz-placeholder {
-  color: #C2C0C4;
-}
-.search__input::-moz-placeholder {
-  color: #C2C0C4;
-}
-.search__input:-ms-input-placeholder {
-  color: #C2C0C4;
-}
 @media (min-width: 992px) {
   .search__content {
     width: 54.125em;
@@ -1769,6 +1733,9 @@ template {
   color: #242325;
   font-weight: 500;
 }
+.search__link a:hover {
+  color: #32C37A !important;
+}
 .search__link a:after {
   position: absolute;
   top: -0.04em;
@@ -1778,6 +1745,155 @@ template {
   font-size: 1.4em;
   color: #32C37A;
   transition: color 0.3s;
+}
+
+@media (min-width: 992px) {
+  .information .searchform {
+    width: 40em;
+  }
+}
+@media (min-width: 992px) {
+  .information__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    grid-auto-rows: minmax(20em, auto);
+    /* 320/16 */
+  }
+}
+.information__item {
+  margin-bottom: 1em;
+  position: relative;
+  border-radius: 1em;
+  background-color: #F3F4F5;
+  transition: background-color 0.3s;
+  padding: 1.5em 1em 5em;
+}
+.information__item:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .information__item {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .information__item {
+    padding: 2em 2em 4em;
+  }
+}
+.information__title {
+  border-bottom: 0.094em solid;
+  border-color: #C2C0C4;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+@media (min-width: 992px) {
+  .information__title {
+    padding-bottom: 1.5em;
+    /* 24/16 */
+    margin-bottom: 1.5em;
+  }
+}
+.information__title span {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.information__subtitle {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.information__subtitle li {
+  margin-bottom: 0.889em;
+  font-size: 1.125em;
+  line-height: 1.3;
+}
+.information__subtitle li:last-child {
+  margin-bottom: 0;
+}
+.information__link {
+  position: absolute;
+  bottom: 1.5em;
+  left: 1em;
+}
+@media (min-width: 992px) {
+  .information__link {
+    left: 2em;
+    bottom: 2em;
+  }
+}
+.information__link a {
+  position: relative;
+  text-decoration: none;
+  color: #242325;
+  font-weight: 500;
+}
+.information__link a:hover {
+  color: #32C37A !important;
+}
+.information__link a:after {
+  position: absolute;
+  top: -0.04em;
+  right: -1.5em;
+  font-family: icon;
+  content: "";
+  font-size: 1.4em;
+  color: #32C37A;
+  transition: color 0.3s;
+}
+
+@media (max-width: 991px) {
+  .informationTabs {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.5em;
+  }
+}
+.informationTabs__item {
+  flex: none;
+  display: inline-block;
+  padding: 0.66em 0.75em;
+  border-radius: 3em;
+  background-color: rgba(50, 195, 122, 0.1);
+  color: #32C37A;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  margin-right: 0.5em;
+}
+@media (min-width: 992px) {
+  .informationTabs__item {
+    margin-right: 1em;
+  }
+}
+.informationTabs__item:last-child {
+  margin-right: 0;
+}
+.informationTabs__item.active, .informationTabs__item:hover {
+  background-color: #32c37a;
+  color: #FFFFFF;
+}
+
+.informationTabContent {
+  padding-top: 1.25em;
+}
+@media (min-width: 992px) {
+  .informationTabContent {
+    padding-top: 2.5em;
+  }
+}
+.informationTabContent__item {
+  font-size: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.informationTabContent__item.active {
+  font-size: 1em;
+  opacity: 1;
 }
 
 .switch {
@@ -2116,10 +2232,6 @@ template {
 .tabs .tabs__item_teachers:last-child {
   margin-right: 0;
 }
-.tabs .tabs__item:hover,
-.tabs .tabs__item_teachers:hover {
-  background-color: #eee;
-}
 .tabs .tabs__item.active, .tabs .tabs__item:hover,
 .tabs .tabs__item_teachers.active,
 .tabs .tabs__item_teachers:hover {
@@ -2286,6 +2398,75 @@ template {
 
 .icon-twitter {
   color: #41ABE1;
+}
+
+.searchform__form {
+  position: relative;
+  margin-bottom: 2.5em;
+}
+.searchform__input {
+  width: 100%;
+  background-color: inherit;
+  color: rgba(36, 35, 37, 0.8);
+  border: 0.063em solid #C2C0C4;
+  padding: 0.833em 1em;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Open Sans";
+  border-radius: 1em;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.searchform__input:hover,
+.searchform__input :active,
+.searchform__input :focus,
+.searchform__input :visited {
+  border-color: rgba(50, 195, 122, 0.7);
+  color: #242325;
+}
+.searchform__input::-webkit-input-placeholder {
+  color: #C2C0C4;
+}
+.searchform__input:-moz-placeholder {
+  color: #C2C0C4;
+}
+.searchform__input::-moz-placeholder {
+  color: #C2C0C4;
+}
+.searchform__input:-ms-input-placeholder {
+  color: #C2C0C4;
+}
+.searchform__button {
+  position: absolute;
+  top: 0.625em;
+  right: 1.375em;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #242325;
+  transition: color 0.1s;
+}
+.searchform__button:after {
+  content: "";
+  font-family: "icon";
+  font-size: 1.5em;
+}
+@media (min-width: 992px) {
+  .searchform__button:after {
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
+}
+.searchform__button:hover {
+  color: #32C37A;
+}
+@media (min-width: 992px) {
+  .searchform__button:hover:after {
+    transform: scale(1.2);
+  }
 }
 
 html {
@@ -2546,8 +2727,13 @@ img {
   color: #131213;
 }
 
+.dark_theme .information__link a,
 .dark_theme .search__link a {
   color: #FFFFFF;
+}
+
+.dark_theme .searchform__button {
+  color: #32C37A;
 }
 
 .dark_theme .search__input {
@@ -2558,6 +2744,10 @@ img {
 .dark_theme .search__input :focus,
 .dark_theme .search__input :visited {
   color: #FFFFFF;
+}
+
+.dark_theme .information__item {
+  background-color: #242325;
 }
 
 .toTop {

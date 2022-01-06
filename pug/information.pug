@@ -1,0 +1,73 @@
+extends layout/layout.pug
+
+block content
+    // begin information
+    section#information.information.section
+        .container_center
+            h2.section__title.section__title_sm Сведения о образовательной организации
+            .information__content
+                .searchform
+                    form.searchform__form
+                        input.searchform__input(type="text" placeholder="Поисковый запрос")
+                        button.searchform__button(type="submit")
+                .informationTabs
+                    .informationTabs__item.active(data-tab="#plate_information_0") О гимназии
+                    .informationTabs__item(data-tab="#plate_information_1") Сообщества
+                    .informationTabs__item(data-tab="#plate_information_2") Деятельность
+
+                .informationTabContent
+
+                    .informationTabContent__item.active#plate_information_0
+
+                        .information__grid
+                            each item in [ {title: 'Информация о гимназии', li1: 'О гимназии' , li2: 'Современная гимназия', li3: 'Основные сведения о гимназии', li4: 'Фильм «История гимназии»'}, {title: 'Сведения об образовательной организации', li1: 'Основные сведения' , li2: 'Структура и управление образовательной организацией', li3: 'Документы', li4: 'Образование'}, {title: 'Информация о режиме функционирования гимназии', li1: 'График прихода обучающихся в гимназию' , li2: 'Закрепление кабинетов за каждым учебным коллективом', li3: 'График уроков (перемен)', li4: 'Расписание уроков'}, {title: 'Обучение с применением ДОТ', li1: 'Обучение с применением дистанционных образовательных технологий' , li2: 'Сочетание очного обучения и семейного образования (смешанное обучение)', li3: '', li4: ''}, {title: 'Порядок рассмотрения обращений', li1: 'В комиссию по урегулированию споров между участниками образовательных отношений' , li2: 'К директору', li3: '', li4: ''}, {title: 'Информационная среда', li1: 'Информационная безопасность' , li2: 'Информационная среда', li3: '', li4: ''}, {title: 'Обеспечение безопасности детей', li1: 'Детская дорожная безопасность' , li2: 'Индивидуальный паспорт безопасности школьника', li3: 'Пожарная безопасность', li4: 'Интернет-безопасность'}, {title: 'Доступная среда', li1: 'Информация об обеспечении доступа инвалидов и других мало мобильных граждан в гимназию' , li2: 'Ответственные', li3: '', li4: ''}, {title: 'Подразделения', li1: 'Музей' , li2: 'Библиотека', li3: 'Информационный центр', li4: 'Спортивный комплекс'}, {title: 'Питание', li1: 'Безналичная оплата питания "Школьная карта"' , li2: 'Информация Комитета по образованию об организации питания в общеобразовательных организациях', li3: 'Анкетирование детей и родителей', li4: ''}, {title: 'Наши достижения', li1: 'Достижения педагогов' , li2: 'Результаты ГИА', li3: 'Медалисты', li4: 'Победители и призеры'}, {title: 'Самообследования', li1: '2020' , li2: '2019', li3: '2018', li4: '2017'}, {title: 'Благотворительность', li1: 'Положение о добровольных пожертвованиях и целевых взносах физических и юридических лиц, индивидуальных предпринимателей и порядке расходования средств' , li2: '', li3: '', li4: ''} ]
+
+                                .information__item
+                                    .information__title
+                                        span= item.title
+                                    ul.information__subtitle
+                                        li= item.li1
+                                        li= item.li2
+                                        li= item.li3
+                                        li= item.li4
+                                    .information__link
+                                        a(href="#") Перейти в раздел
+
+                    .informationTabContent__item#plate_information_1
+
+                        .information__grid
+                            each item in [1, 2]
+
+                                .information__item
+                                    .information__title
+                                        span Информация о гимназии
+
+                                    ul.information__subtitle
+                                        li О гимназии
+                                        li Современная гимназия
+                                        li Основные сведения о гимназии
+                                        li Фильм «История гимназии»
+
+                                    .information__link
+                                        a(href="#") Перейти в раздел
+                    .informationTabContent__item#plate_information_2
+
+                        .information__grid
+                            each item in [1, 2, 3, 4, 5]
+
+                                .information__item
+                                    .information__title
+                                        span Информация о гимназии
+
+                                    ul.information__subtitle
+                                        li О гимназии
+                                        li Современная гимназия
+                                        li Основные сведения о гимназии
+                                        li Фильм «История гимназии»
+
+                                    .information__link
+                                        a(href="#") Перейти в раздел
+
+
+
+    // end information

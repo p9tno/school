@@ -1,39 +1,4 @@
 .search {
-    &__form {
-        margin-bottom: 2.5em;
-    }
-
-    &__input {
-
-        width: 100%;
-
-        background-color: inherit;
-        color: rgba($main_color, .8);
-
-        border: 0.063em solid $color_grey;
-        padding: 0.833em 1em;
-        outline: none;
-        font-size: $main_font_size;
-        font-weight: 500;
-        font-family: $main_font_family;
-        border-radius: 1em;
-        transition: all 0.3s;
-        cursor: pointer;
-
-        &:hover,
-        :active,
-        :focus,
-        :visited {
-            border-color: rgba($color_success, .7);
-            color: $main_color;
-        }
-
-        // Placeholder for input +++++++++++++++
-        @include placeholder {
-            color: $color_grey;
-        }
-    }
-
     &__content {
         @media (min-width: 992px) {
             width: 54.125em;
@@ -93,6 +58,10 @@
             text-decoration: none;
             color: $main_color;
             font-weight: 500;
+
+            &:hover {
+                color: $color_success!important;
+            }
 
             &:after {
                 position: absolute;

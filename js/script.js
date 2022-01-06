@@ -273,6 +273,17 @@ function doTabsTeachers() {
 };
 doTabsTeachers()
 
+function doTabsInformation() {
+    $('.informationTabs__item').on('click', function() {
+        $('.informationTabs__item').removeClass('active');
+        $(this).addClass('active');
+
+        $('.informationTabContent__item').removeClass('active');
+        $($(this).data('tab')).addClass('active');
+    });
+};
+doTabsInformation()
+
 
 
 // function doDrop() {

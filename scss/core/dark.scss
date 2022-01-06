@@ -157,11 +157,17 @@
 // end footer
 
 // start search
+.dark_theme .information__link,
 .dark_theme .search__link {
     a {
         color: $color_white;
 
     }
+}
+
+.dark_theme .searchform__button {
+    color: $color_success;
+
 }
 
 .dark_theme .search__input {
@@ -175,3 +181,7 @@
     }
 }
 // end search
+
+.dark_theme .information__item {
+    background-color: $main_color;
+}

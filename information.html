@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <title>home</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <!-- begin header-->
+      <header class="header" id="header">
+        <div class="header__inner">
+          <div class="header__logo"><a class="logo" href="/"><img src="/img/logo.png" alt="alt"/></a></div>
+          <div class="header__wrap">
+            <div class="header__top">
+              <div class="header__action">
+                <div class="seach desktop"><a class="seach__link"><i class="icon-search"></i></a></div>
+                <div class="change">
+                  <div class="switch">
+                    <label class="switch__label">
+                      <input type="checkbox" id="themeCheckbox" name="themeCheckbox"/><span><i></i></span>
+                    </label>
+                  </div>
+                  <div class="fontsize">
+                    <div class="fontsize__group">
+                      <button class="fontsize__btn increaseFont-js" type="submit">A+</button>
+                      <button class="fontsize__btn defaultFont-js" type="submit">A</button>
+                      <button class="fontsize__btn fontsize__btn_sm decreaseFont-js" type="submit">A-</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone" id="phone">
+                  <div class="phone__item">
+                    <div class="phone__label desktop">5-11 классы</div><a class="phone__link" href="tel:8 800 000 00 00"><i class="icon-phone mobile"></i><span>8 800 000 00 00</span></a>
+                    <div class="phone__address mobile">Дровяная улица, дом 7а, литер А</div>
+                  </div>
+                  <div class="phone__drop">
+                    <div class="phone__item">
+                      <div class="phone__label desktop">4-5 классы</div><a class="phone__link" href="tel:+7 999 999 99 99"><i class="icon-phone mobile"></i><span>+7 999 999 99 99</span></a>
+                      <div class="phone__address mobile">Циолковского улица, дом 8, литер А</div>
+                    </div>
+                  </div>
+                  <div class="phone__toggle desktop"><i class="icon-arrow_bottom"></i></div>
+                </div>
+              </div>
+              <nav class="navbar navbar_top">
+                <ul class="menu">
+                  <li class="menu-item"><a href="#">Сведения об образовательной организации</a></li>
+                  <li class="menu-item"><a href="#">Электронная приемная</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__bottom">
+              <nav class="navbar">
+                <ul class="menu">
+                  <li class="menu-item"><a href="#">Новости</a></li>
+                  <li class="menu-item"><a href="#">Объявления</a></li>
+                  <li class="menu-item"><a href="#">F.A.Q.</a></li>
+                  <li class="menu-item"><a href="#">Контакты</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="#">Важное</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="seach mobile"><a class="seach__link"><i class="icon-search"></i></a></div>
+        <div class="header__toggle"></div>
+      </header>
+      <!-- end header-->
+      <!-- begin main-->
+      <main class="main">
+        <!-- begin information-->
+        <section class="information section" id="information">
+          <div class="container_center">
+            <h2 class="section__title section__title_sm">Сведения о образовательной организации</h2>
+            <div class="information__content">
+              <div class="searchform">
+                <form class="searchform__form">
+                  <input class="searchform__input" type="text" placeholder="Поисковый запрос"/>
+                  <button class="searchform__button" type="submit"></button>
+                </form>
+              </div>
+              <div class="informationTabs">
+                <div class="informationTabs__item active" data-tab="#plate_information_0">О гимназии</div>
+                <div class="informationTabs__item" data-tab="#plate_information_1">Сообщества</div>
+                <div class="informationTabs__item" data-tab="#plate_information_2">Деятельность</div>
+              </div>
+              <div class="informationTabContent">
+                <div class="informationTabContent__item active" id="plate_information_0">
+                  <div class="information__grid">
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Сведения об образовательной организации</span></div>
+                      <ul class="information__subtitle">
+                        <li>Основные сведения</li>
+                        <li>Структура и управление образовательной организацией</li>
+                        <li>Документы</li>
+                        <li>Образование</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о режиме функционирования гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>График прихода обучающихся в гимназию</li>
+                        <li>Закрепление кабинетов за каждым учебным коллективом</li>
+                        <li>График уроков (перемен)</li>
+                        <li>Расписание уроков</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Обучение с применением ДОТ</span></div>
+                      <ul class="information__subtitle">
+                        <li>Обучение с применением дистанционных образовательных технологий</li>
+                        <li>Сочетание очного обучения и семейного образования (смешанное обучение)</li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Порядок рассмотрения обращений</span></div>
+                      <ul class="information__subtitle">
+                        <li>В комиссию по урегулированию споров между участниками образовательных отношений</li>
+                        <li>К директору</li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информационная среда</span></div>
+                      <ul class="information__subtitle">
+                        <li>Информационная безопасность</li>
+                        <li>Информационная среда</li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Обеспечение безопасности детей</span></div>
+                      <ul class="information__subtitle">
+                        <li>Детская дорожная безопасность</li>
+                        <li>Индивидуальный паспорт безопасности школьника</li>
+                        <li>Пожарная безопасность</li>
+                        <li>Интернет-безопасность</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Доступная среда</span></div>
+                      <ul class="information__subtitle">
+                        <li>Информация об обеспечении доступа инвалидов и других мало мобильных граждан в гимназию</li>
+                        <li>Ответственные</li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Подразделения</span></div>
+                      <ul class="information__subtitle">
+                        <li>Музей</li>
+                        <li>Библиотека</li>
+                        <li>Информационный центр</li>
+                        <li>Спортивный комплекс</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Питание</span></div>
+                      <ul class="information__subtitle">
+                        <li>Безналичная оплата питания &quot;Школьная карта&quot;</li>
+                        <li>Информация Комитета по образованию об организации питания в общеобразовательных организациях</li>
+                        <li>Анкетирование детей и родителей</li>
+                        <li></li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Наши достижения</span></div>
+                      <ul class="information__subtitle">
+                        <li>Достижения педагогов</li>
+                        <li>Результаты ГИА</li>
+                        <li>Медалисты</li>
+                        <li>Победители и призеры</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Самообследования</span></div>
+                      <ul class="information__subtitle">
+                        <li>2020</li>
+                        <li>2019</li>
+                        <li>2018</li>
+                        <li>2017</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Благотворительность</span></div>
+                      <ul class="information__subtitle">
+                        <li>Положение о добровольных пожертвованиях и целевых взносах физических и юридических лиц, индивидуальных предпринимателей и порядке расходования средств</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="informationTabContent__item" id="plate_information_1">
+                  <div class="information__grid">
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="informationTabContent__item" id="plate_information_2">
+                  <div class="information__grid">
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                    <div class="information__item">
+                      <div class="information__title"><span>Информация о гимназии</span></div>
+                      <ul class="information__subtitle">
+                        <li>О гимназии</li>
+                        <li>Современная гимназия</li>
+                        <li>Основные сведения о гимназии</li>
+                        <li>Фильм «История гимназии»</li>
+                      </ul>
+                      <div class="information__link"><a href="#">Перейти в раздел</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end information-->
+      </main>
+      <!-- end main-->
+      <!-- begin footer-->
+      <footer class="footer" id="footer">
+        <div class="container_center">
+          <div class="footer__inner">
+            <div class="footer__row">
+              <div class="footer__col">
+                <div class="footer__institution">
+                  <div class="footer__title"><span>Гимназия №278</span></div>
+                  <div class="footer__subtitle"><span>имени Б.Б. Голицына</span></div>
+                </div>
+                <div class="footer__social">
+                  <div class="social">
+                    <div class="social__item"><a class="social__link icon-vk" href="#"></a></div>
+                    <div class="social__item"><a class="social__link icon-facebook" href="#"></a></div>
+                    <div class="social__item"><a class="social__link icon-youtube" href="#"></a></div>
+                    <div class="social__item"><a class="social__link icon-twitter" href="#"></a></div>
+                  </div>
+                </div>
+                <div class="footer__data"><a class="footer__link" href="#">Обработка персональных данных</a></div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__naw">
+                  <nav class="navbar">
+                    <ul class="menu">
+                      <li class="menu-item"><a href="#">Сведения о образовательной организации</a></li>
+                      <li class="menu-item"><a href="#">Электронная приемная</a></li>
+                      <li class="menu-item"><a href="#">Новости</a></li>
+                      <li class="menu-item"><a href="#">Объявления</a></li>
+                      <li class="menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                  <nav class="navbar">
+                    <ul class="menu">
+                      <li class="menu-item"><a href="#">F.A.Q.</a></li>
+                      <li class="menu-item menu-item-has-children"><a href="#">Важное</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="phone phone_footer">
+                  <div class="phone__item phone__item_footer"><a class="phone__link" href="tel:8 800 000 00 00"><i class="icon-phone"></i><span>8 800 000 00 00</span></a>
+                    <div class="phone__address">Дровяная улица, дом 7а, литер А</div>
+                  </div>
+                  <div class="phone__item phone__item_footer"><a class="phone__link" href="tel:+7 999 999 99 99"><i class="icon-phone"></i><span>+7 999 999 99 99</span></a>
+                    <div class="phone__address">Циолковского улица, дом 8, литер А</div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__action">
+                  <div class="fontsize">
+                    <div class="fontsize__group">
+                      <button class="fontsize__btn increaseFont-js" type="submit">A+</button>
+                      <button class="fontsize__btn defaultFont-js" type="submit">A</button>
+                      <button class="fontsize__btn fontsize__btn_sm decreaseFont-js" type="submit">A-</button>
+                    </div>
+                  </div>
+                  <div class="switch">
+                    <label class="switch__label">
+                      <input type="checkbox" id="themeCheckbox" name="themeCheckbox"/><span><i></i></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__row">
+              <div class="footer__copyright"><span>© 2009-2017 ГБОУ Гимназия №278. Адмиралтейского района Санкт-Петербурга</span></div>
+              <div class="footer__info"><a class="footer__link" href="#">Карта сайта</a><a class="footer__link" href="#">Сообщить об ошибке на сайте</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer-->
+      <div class="toTop" id="toTop"><a class="icon-arrow_long" href="#header"></a></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/fontsize.js"></script>
+    <script src="/js/changetheme.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="/js/initsliders.js"> </script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
