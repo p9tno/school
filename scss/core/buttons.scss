@@ -64,6 +64,24 @@
 		}
 	}
 
+	&_toggle {
+		padding: 0.7988em 1.25em;
+		width: 100%;
+
+		span {
+			position: relative;
+
+			&:after {
+				position: absolute;
+				top: 0.3em;
+				right: -2.2em;
+				font-family: icon;
+				content: '\e904';
+			}
+		}
+
+	}
+
 }
 
 .dark_theme .btn_transparent {

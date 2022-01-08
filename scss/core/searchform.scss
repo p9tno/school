@@ -1,7 +1,6 @@
 .searchform {
     &__form {
         position: relative;
-        margin-bottom: 2.5em;
     }
 
     &__input {
@@ -70,5 +69,14 @@
             }
         }
 
+    }
+}
+
+@media (min-width: 992px) {
+    .aside__search {
+        .searchform__input {
+            border: none;
+            background-color: rgba($color_white, 1);
+        }
     }
 }

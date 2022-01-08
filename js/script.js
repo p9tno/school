@@ -22,13 +22,34 @@ $(document).ready(function () {
 
     function openMobileNav() {
         $('.header__toggle').click(function(event) {
-            // console.log('Показ меню');
+            console.log('Показ меню');
             $('.header__wrap').toggleClass('header__wrap_open');
             $('.header__toggle').toggleClass('header__toggle_open');
             $( 'body' ).toggleClass( 'nav-open' );
         });
     };
     openMobileNav();
+
+    // start ASIDE
+    function openMobileAside() {
+        $('.asideToggleOpen-js').click(function(event) {
+            // console.log('Показ aside');
+            $('.category__aside').addClass('category__aside_open');
+            $( 'body' ).addClass( 'nav-open' );
+        });
+    };
+
+    function closeMobileAside() {
+        $('.asideToggleClose-js').click(function(event) {
+            // console.log('Скрыть aside');
+            $('.category__aside').removeClass('category__aside_open');
+            $( 'body' ).removeClass( 'nav-open' );
+        });
+    };
+    openMobileAside();
+    closeMobileAside();
+    // end ASIDE
+
 
 
     function openPhone() {

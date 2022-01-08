@@ -190,6 +190,32 @@ $(document).ready(function() {
 });
 // end teachers
 
+// start  categoryGallery
+$(document).ready(function() {
+    const swiper = new Swiper('#categoryGallery', {
+        slidesPerView: 1,
+
+        navigation: {
+            nextEl: '.gallery__arrow_next',
+            prevEl: '.gallery__arrow_prev',
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        loop: true,
+        // effect: "fade",
+        // effect: "cube",
+        // effect: "coverflow",
+        // effect: "flip",
+        speed: 300,
+
+    })
+});
+// end  categoryGallery
+
 
 // if ($(".photoGallery__arrow_prev").hasClass('swiper-button-disabled')) {
 // // есть класс

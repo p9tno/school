@@ -1,121 +1,65 @@
 $(document).ready(function() {
-    // Выберите размер шрифта по умолчанию
-    let reset = $('.wrapper').css('fontSize');
-    console.log('default reset: ', reset);
+    let elm = $('.wrapper')
+    let min = $('.decreaseFont-js')
+    let max = $('.increaseFont-js')
+    let normal = $('.defaultFont-js')
 
-    //Изменение размера будет проводиться для указанных элементов
-    let elm = $('.wrapper');
-    //Создаем localStorage
-    let size = localStorage.getItem('size');
-    console.log('localStorage size: ', size);
+    if (localStorage.getItem("size") == "max") {
+        elm.addClass('maxFont')
 
-    if (size) {
-        elm.css('font-size', size + 'px');
-        console.log('localStorage current: ',size);
+        normal.prop("disabled", false)
+        max.prop("disabled", true)
+        min.prop("disabled", false)
+    } else if (localStorage.getItem("size") == "min") {
+        elm.addClass('minFont')
+
+        normal.prop("disabled", false)
+        max.prop("disabled", false)
+        min.prop("disabled", true)
     } else {
-        //установить размер шрифта по умолчанию и удалить пиксели из значения
-        size = str_replace(reset, 'px', '');
+        elm.removeClass('minFont maxFont')
+
+        normal.prop("disabled", true)
+        max.prop("disabled", false)
+        min.prop("disabled", false)
     }
 
-    //Минимальный размер шрифта
-    let min = 14;
-    ///Максимальный размер шрифта
-    let max = 17;
-
-    changeDisabled(min, max, size, reset);
-
     //Функция увеличения размера шрифта
-    $('.increaseFont-js').click(function() {
-        //если размер шрифта меньше или равен максимального значения
-        if (size <= max) {
-            //увеличить размер
-            size++;
-            //установить размер шрифта
-            elm.css( {'fontSize': size} );
-            localStorage.setItem('size', size);
+    max.click(function() {
+        // console.log('+');
+        elm.removeClass('minFont')
+        elm.addClass('maxFont')
 
-            console.log(size);
-            console.log('current: ', elm.css('font-size'));
-            console.log('+ default reset: ', reset);
+        normal.prop("disabled", false)
+        max.prop("disabled", true)
+        min.prop("disabled", false)
 
-            console.log('min: ', min, 'max: ', max);
-
-            changeDisabled(min, max, size, reset);
-
-        }
-        //Прерываем передачу события далее по дереву DOM
-        return false;
+        localStorage.setItem("size", "max");
     });
 
     //Функция уменьшения размера шрифта
-    $('.decreaseFont-js').click(function() {
-        //Если размер шрифта больше или равен минимальному значению
-        if (size >= min) {
-            //Уменьшаем размер
-            size--;
-            //Устанавливаем размер шрифта
-            elm.css( {'fontSize': size} );
-            localStorage.setItem('size', size);
+    min.click(function() {
+        // console.log('-');
+        elm.removeClass('maxFont')
+        elm.addClass('minFont')
 
-            console.log(size);
-            console.log('current: ', elm.css('font-size'));
-            console.log('- default reset: ', reset);
+        normal.prop("disabled", false)
+        max.prop("disabled", false)
+        min.prop("disabled", true)
 
-            console.log('min: ', min, 'max: ', max);
-
-            changeDisabled(min, max, size, reset);
-
-        }
-        //Прерываем передачу события далее по дереву DOM
-        return false;
+        localStorage.setItem("size", "min");
     });
 
     //Функция сброса к значению по умолчанию
-    $('.defaultFont-js').click(function() {
-        //установить размер шрифта по умолчанию
-        elm.css({ 'fontSize': reset } );
-        size = reset;
-        size = Number(str_replace(reset, 'px', ''));
-        localStorage.removeItem('size');
+    normal.click(function() {
+        // console.log('reset');
+        elm.removeClass('minFont maxFont')
 
-        console.log('click reset: ', reset);
-        console.log('current: ', elm.css('font-size'));
-        console.log(size);
+        normal.prop("disabled", true)
+        max.prop("disabled", false)
+        min.prop("disabled", false)
 
-        console.log('min: ', min, 'max: ', max);
-
-        changeDisabled(min, max, size, reset);
-
+        localStorage.removeItem("size");
     });
 
 });
-
-//Функция замены строки
-function str_replace(haystack, needle, replacement) {
-    let temp = haystack.split(needle);
-    return temp.join(replacement);
-}
-
-//Функция добавления к кнопке атрибута disabled
-function changeDisabled(min, max, size, reset) {
-    // max disabled
-    if (size >= max) {
-        $('.increaseFont-js').prop("disabled", true)
-    } else (
-        $('.increaseFont-js').prop("disabled", false)
-    );
-
-    // min disabled
-    if (size <= min ) {
-        $('.decreaseFont-js').prop("disabled", true)
-    } else (
-        $('.decreaseFont-js').prop("disabled", false)
-    );
-
-    // reset disabled
-    if (( Number(str_replace(reset, 'px', '')) == size)) {
-        $('.defaultFont-js').prop("disabled", true)
-    } else {
-        $('.defaultFont-js').prop("disabled", false)
-    }
-}

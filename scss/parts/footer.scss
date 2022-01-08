@@ -3,11 +3,6 @@
 .footer {
 	background-color: $color_white;
 	transition: background-color 0.3s;
-	padding-top: 5.625em;
-	@media (min-width: 992px) {
-		padding-top: 7.5em;
-
-	}
 
 	&__inner {
 		border-top: 2px solid;

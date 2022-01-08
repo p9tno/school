@@ -1,0 +1,21 @@
+.breadcrumb {
+  margin: 15px 0;
+  padding: 0;
+}
+.breadcrumb li {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.breadcrumb li:not(:first-child):before {
+  content: "/";
+  display: inline-block;
+}
+.breadcrumb li:last-child a {
+  cursor: default;
+  text-decoration: none;
+}
+.breadcrumb li a {
+  font-size: 0.875em;
+  text-decoration: none;
+  /* 14/16 */
+}

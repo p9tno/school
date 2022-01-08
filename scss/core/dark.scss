@@ -6,6 +6,11 @@
 
 }
 
+.dark_theme .main {
+    box-shadow: inset 0.063em 0.375em 0.563em -0.375em rgba($color_white, 0.1);
+
+}
+
 .dark_theme .header {
     background-color: $main_color_dark;
     box-shadow: 0 0.125em 1.25em rgba($color_white, 0.1);
@@ -180,8 +185,47 @@
         color: $color_white;
     }
 }
+
+.dark_theme .searchform__input {
+    color: $color_white;
+}
+
+.dark_theme .aside__search {
+    .searchform__input {
+        color: $main_color;
+
+    }
+}
 // end search
 
+// start information
 .dark_theme .information__item {
     background-color: $main_color;
 }
+// end information
+
+// start aside
+.dark_theme .category__aside {
+    background-color: $main_color;
+}
+
+.dark_theme .aside__link {
+    color: $color_white_dark;
+}
+// end aside
+
+// start breadcrumb
+.dark_theme .breadcrumb {
+    a {
+        color: $color_white;
+    }
+}
+// end breadcrumb
+
+// start content
+.dark_theme .content {
+    a {
+        color: $color_white;
+    }
+}
+// end content
