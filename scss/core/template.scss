@@ -62,6 +62,10 @@ body {
     padding: 0 0.75em;
     width: 100%;
 
+    &_sm {
+        max-width: 71em;
+    }
+
     @media (min-width: 992px) {
         padding: 0 1em;
     }

@@ -138,6 +138,61 @@ $(document).ready(function(){
 
 // end scrollTop
 
+// function collapsed() {
+//     $( '[data-collapsed-toggle]' ).on( 'click', function () {
+//         console.log('collapsed');
+//         const wrap = $( this ).closest( '[data-collapsed-wrap]' ),
+//             body = wrap.find( '[data-collapsed-body]' );
+//
+//             $('[data-collapsed-body]').not(wrap).removeClass('open');
+//
+//         body.toggleClass( 'open' );
+//     } );
+// }
+// collapsed();
+
+// function toggleTabs() {
+//     let toggle = $( '[data-tab]' );
+//     toggle.on( 'click', ( e ) => {
+//         let self = e.target;
+//         $( '[data-tab]' ).removeClass( 'active' );
+//         $( self ).addClass( 'active' );
+//         $( '[data-plate]' ).removeClass( 'active' );
+//         $( '[data-plate=' + self.dataset.tab + ']' ).addClass( 'active' );
+//     } );
+// }
+// toggleTabs();
+
+function collapsed() {
+    let toggle = $('[data-collapse]');
+
+    toggle.on('click', function() {
+        let id = $(this).data('collapse'),
+            body = $('[data-collapse-body="'+id+'"]'),
+            wrap = body.closest('[data-collapse-wrapper]');
+
+        if (!id) {
+            // $('[data-collapse-wrapper]').removeClass('open');
+            body = $(this).parent().find('[data-collapse-body]');
+            $(this).toggleClass('open');
+            if ($(this).hasClass('open')) {
+                body.slideDown();
+            } else {
+                body.slideUp();
+            }
+        } else if (id === 'all') {
+            body.slideDown();
+            toggle.addClass('open');
+        } else {
+            body.slideToggle();
+            $(this).toggleClass('open');
+        }
+
+
+    });
+}
+collapsed();
+
 
 // $(document).ready(function() {
 //     function onVisible( selector, callback, repeat = false ) {

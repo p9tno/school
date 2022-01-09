@@ -1,0 +1,56 @@
+.collapse {
+  border-bottom: 1px solid rgba(29, 29, 27, 0.15);
+  margin: 1em 0 2em;
+  padding-top: 1em;
+}
+.collapse__title {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+  display: flex;
+  width: -webkit-max-content;
+  width: max-content;
+  align-items: center;
+  cursor: pointer;
+}
+.collapse__title:after {
+  content: "";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  color: #006EFF;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  transform: rotate(45deg);
+  margin-left: 1.1em;
+  margin-top: -0.5em;
+}
+.collapse__title.open:after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+.collapse__body {
+  display: none;
+  padding-bottom: 1.1em;
+}
+.collapse__body.open {
+  display: block;
+}
+.collapse__info {
+  color: #8F8F8F;
+  margin-top: 2.51em;
+}
+@media (min-width: 48em) {
+  .collapse__info {
+    font-size: 1em;
+  }
+}
+.collapse__saveAndEdit {
+  margin-bottom: 1.875em;
+}
+.collapse__foot {
+  margin-top: 3.125em;
+}
+.collapse .lkCoursMessage__file {
+  margin-top: 1em;
+}
