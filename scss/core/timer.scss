@@ -1,0 +1,40 @@
+.timer {
+    color: $color_white;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    &:before {
+        content: '\e906';
+        font-family: 'icon';
+        font-size: 1.25em;
+        margin-right: 0.5em;
+    }
+
+    &__item {
+        &_days {
+            &.hide {
+                display: none;
+
+            }
+        }
+
+        &:nth-child(2) {
+            &:after {
+                content: ':';
+            }
+        }
+
+        &:nth-child(3) {
+            &:after {
+                content: ':';
+            }
+        }
+    }
+
+    &__number {}
+
+    &__label {
+        margin: 0 0.4375em;
+    }
+}

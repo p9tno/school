@@ -2999,6 +2999,31 @@ template {
   display: block;
 }
 
+.timer {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.timer:before {
+  content: "";
+  font-family: "icon";
+  font-size: 1.25em;
+  margin-right: 0.5em;
+}
+.timer__item_days.hide {
+  display: none;
+}
+.timer__item:nth-child(2):after {
+  content: ":";
+}
+.timer__item:nth-child(3):after {
+  content: ":";
+}
+.timer__label {
+  margin: 0 0.4375em;
+}
+
 html {
   height: 100%;
 }
@@ -3375,69 +3400,4 @@ img {
 .toTop.active {
   font-size: inherit;
   opacity: 1;
-}
-
-.promotion__descr span {
-  font-weight: 700;
-  font-size: 26px;
-}
-
-.promotion__timer .title {
-  text-align: right;
-}
-
-.promotion__timer .timer {
-  margin-top: 60px;
-  padding-left: 95px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.promotion__timer .timer__block {
-  width: 102px;
-  height: 120px;
-  background: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.promotion__timer .timer__block span {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  font-size: 56px;
-  font-weight: 700;
-}
-
-.timer__items {
-  display: flex;
-  font-size: 48px;
-}
-
-.timer__item {
-  position: relative;
-  min-width: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-
-.timer__item::before {
-  content: attr(data-title);
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  font-size: 14px;
-}
-
-.timer__item:not(:last-child)::after {
-  content: ":";
-  position: absolute;
-  right: -15px;
 }

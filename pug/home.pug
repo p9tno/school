@@ -1,6 +1,7 @@
 extends layout/layout.pug
 
 block content
+
     // begin slider
     section.slider
         .swiper-container#slider
@@ -159,16 +160,18 @@ block content
                             .ads__bg(style="background-image: url('img/ads/ads-1-min.jpg')")
                                 .ads__action
                                     .ads__category важно
-                                    //- .ads__timer
-                                    //-     .timer(data-deadline='2022-01-26')
-                                    //-         .timer__block
-                                    //-             span.days_js дней
-                                    //-         .timer__block
-                                    //-             span.hours_js часов
-                                    //-         .timer__block
-                                    //-             span.minutes_js минут
-                                    //-         .timer__block
-                                    //-             span.seconds_js секунд
+                                    .ads__timer
+                                        .timer(id="trip_2022-02-12T17:51:00")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
+
                                 .ads__content
                                     .ads__date 18 июня 2021
                                     .ads__title
@@ -181,6 +184,18 @@ block content
                             .ads__bg(style="background-image: url('img/ads/ads-2-min.jpg')")
                                 .ads__action
                                     .ads__category важно
+                                    .ads__timer
+                                        .timer(id="trip_2022-06-12")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
+
                                 .ads__content
                                     .ads__date 17 июня 2021
                                     .ads__title
@@ -193,7 +208,18 @@ block content
                         .ads__item.ads__item_reverse
                             .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
                                 .ads__action
-                                    //- .ads__category важно
+                                    .ads__timer
+                                        .timer(id="trip_2022-01-29")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
+
                             .ads__content
                                 .ads__date 1 июня 2021
                                 .ads__title
@@ -217,7 +243,18 @@ block content
                         .ads__item.ads__item_reverse
                             .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
                                 .ads__action
-                                    //- .ads__category важно
+                                    .ads__category важно
+                                    .ads__timer
+                                        .timer(id="trip_2022-01-20T13:38:10")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
                             .ads__content
                                 .ads__date 1 июня 2021
                                 .ads__title
