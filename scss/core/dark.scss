@@ -209,7 +209,8 @@
     background-color: $main_color;
 }
 
-.dark_theme .aside__link {
+.dark_theme .aside__link,
+.dark_theme .date__link {
     color: $color_white_dark;
 }
 // end aside
@@ -222,13 +223,18 @@
 }
 // end breadcrumb
 
-// start content
+// start category content
+.dark_theme .category__filter,
 .dark_theme .content {
     a {
         color: $color_white;
+
+        &:after {
+            color: $color_white;
+        }
     }
 }
-// end content
+// end category content
 
 // start faq
 .dark_theme .collapse__body {
