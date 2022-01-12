@@ -640,4 +640,47 @@
         }
     }
 }
+
+.category__content {
+    .ads__grid {
+
+        // @media (max-width: 991px) {
+        //     overflow-x: initial;
+        //     overflow-y: initial;
+        //     padding-bottom: 0;
+        // }
+
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 0.75em;
+        grid-auto-rows: minmax(27.5em, auto);
+
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-gap: 1.875em;
+            grid-auto-rows: minmax(35em, auto);
+            /* 560/16 */
+        }
+
+        .ads__item {
+            min-height: initial;
+            // height: 100%;
+        }
+
+        .ads__bg {
+            height: 100%;
+        }
+
+        .ads__item_reverse {
+            .ads__bg {
+                height: 14em;
+                @media (min-width: 992px) {
+                    height: 19.75em;
+                }
+            }
+
+        }
+    }
+}
 // end category ################################################
