@@ -241,3 +241,32 @@
     color: $color_white_dark;
 }
 // end faq
+
+// start single
+.dark_theme .single__action {
+    a {
+        color: $color_white_dark;
+    }
+}
+
+.dark_theme .map__info {
+    background-color: $main_color_dark;
+    @media (min-width: 992px) {
+        background-color: $main_color;
+    }
+}
+
+.dark_theme .ads {
+    background-color: $main_color_dark;
+}
+
+.dark_theme .map__address {
+    color: $color_grey;
+}
+
+.dark_theme .map__phone {
+    a {
+        color: $color_white_dark;
+    }
+}
+// end single

@@ -5,6 +5,7 @@
 @import "../fonts/icon/style.css";
 
 @import 'core/reset';
+@import 'core/timer';
 
 // @import 'core/template';
 
@@ -22,6 +23,7 @@
 @import 'parts/search';
 @import 'parts/information';
 @import 'parts/category';
+@import 'parts/single';
 
 // @import 'core/form';
 // @import 'core/modal';
@@ -41,7 +43,7 @@
 @import 'core/searchform';
 @import 'core/breadcrumb';
 @import 'core/collapse';
-@import 'core/timer';
+@import 'core/map';
 
 @import 'core/template';
 @import 'core/dark';

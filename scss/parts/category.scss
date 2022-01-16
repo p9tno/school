@@ -108,6 +108,30 @@
         }
     }
 
+    &__slider {
+        .swiper-container {
+            border-radius: 1em;
+
+            .swiper-pagination-bullets {
+                bottom: 1.5em;
+            }
+        }
+
+        .slider__wrap {
+
+            min-height: 11.375em;
+
+            @media (min-width: 992px) {
+                min-height: 29.25em;
+            }
+
+            &:before {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.5) 100%);
+            }
+
+        }
+    }
+
 }
 
 // start aside ################################################
@@ -574,48 +598,6 @@
 
 .category__content {
     min-width: 0;
-
-    .categoryGallery {
-        &__bg {
-            overflow: hidden;
-            position: relative;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding-bottom: 11.375em;
-            @media (min-width: 992px) {
-                padding-bottom: 29.25em;
-
-            }
-            border-radius: 1em;
-
-            &:after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.5) 100%);
-            }
-        }
-
-        .gallery__arrow_next,
-        .gallery__arrow_prev {
-            z-index: 5;
-        }
-
-        .swiper-slide {
-            border-radius: 1em;
-            overflow: hidden;
-        }
-
-        .swiper-container .swiper-pagination-bullets {
-            bottom: 1.5em;
-            /* 24/16 */
-        }
-
-    }
 }
 
 .category__content {
@@ -643,13 +625,6 @@
 
 .category__content {
     .ads__grid {
-
-        // @media (max-width: 991px) {
-        //     overflow-x: initial;
-        //     overflow-y: initial;
-        //     padding-bottom: 0;
-        // }
-
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-gap: 0.75em;
@@ -660,7 +635,6 @@
             grid-template-columns: repeat(2, auto);
             grid-gap: 1.875em;
             grid-auto-rows: minmax(35em, auto);
-            /* 560/16 */
         }
 
         .ads__item {

@@ -97,14 +97,23 @@ block content
                     a(href="#") Значительные события 2016-2017 года
                     a(href="#") Значительные события 2016-2017 года
 
-                .categoryGallery
+                .category__slider
                     h4 Галерея фото
-                    .swiper-container#categoryGallery
-                        .swiper-wrapper
-                            each item in [1, 2, 3]
-                                .swiper-slide
-                                    .categoryGallery__bg(style="background-image: url('img/slider-min.jpg')")
 
-                        .swiper-button-prev.categoryGallery__arrow_prev
-                        .swiper-button-next.categoryGallery__arrow_next
+                    .swiper-container#slider
+                        .swiper-wrapper
+                            each item in [1, 2]
+                                .swiper-slide
+                                    .slider__wrap(style="background-image: url('img/slider-min.jpg')")
+                        .swiper-button-prev.slider__arrow_prev
+                        .swiper-button-next.slider__arrow_next
                         .swiper-pagination
+                    //- .swiper-container#categoryGallery
+                    //-     .swiper-wrapper
+                    //-         each item in [1, 2, 3]
+                    //-             .swiper-slide
+                    //-                 .categoryGallery__bg(style="background-image: url('img/slider-min.jpg')")
+                    //- 
+                    //-     .swiper-button-prev.categoryGallery__arrow_prev
+                    //-     .swiper-button-next.categoryGallery__arrow_next
+                    //-     .swiper-pagination

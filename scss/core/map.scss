@@ -1,0 +1,85 @@
+.map {
+    &__content {
+        position: relative;
+    }
+
+    &__iframe {
+        position: relative;
+        width: 100%;
+        padding-bottom: 15em;
+        @media (min-width: 992px) {
+            padding-bottom: 37.75em;
+        }
+
+        iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+    }
+
+    &__info {
+        margin-top: 1.5em;
+
+        @media (min-width: 992px) {
+            margin-top: 0;
+            position: absolute;
+            top: 30%;
+            width: 33em;
+            min-height: 16.5em;
+            border-radius: 1em;
+            box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
+
+            padding: 2.5em;
+            background-color: $color_white;
+
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.5em;
+
+        span {
+            font-family: $title_font_family;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        @media (min-width: 992px) {
+            margin-bottom: 2em;
+
+            span {
+                font-size: 2em;
+            }
+
+        }
+    }
+
+    &__address {
+        color: $color_black_light;
+        line-height: 1.3;
+        margin-bottom: 1em;
+    }
+
+    &__mail {
+        margin-bottom: 1em;
+
+        a {
+            color: $color_success;
+            font-weight: 500;
+        }
+    }
+
+    &__phone {
+        a {
+            font-weight: 500;
+            text-decoration: none;
+            color: $main_color;
+            font-size: 1.25em;
+
+        }
+    }
+}

@@ -1,0 +1,279 @@
+extends layout/layout.pug
+
+block content
+    // begin single
+    section.single.single_section
+        .container_center.container_center_sm
+
+            ul.breadcrumb
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Объявления
+                li
+                    a(href="#") Петербургский международный образовательный форум-2021
+
+            h3.single__title Петербургский международный образовательный форум-2021
+
+            .single__top
+                .single__time
+                    .single__timer
+                        .timer__title
+                            span Осталось:
+                        .timer(id="trip_2022-02-12T17:51:00")
+                            .timer__item.timer__item_days.daysItem_js
+                                span.timer__number.days_js
+                                span.timer__label.daysTitle_js
+                            .timer__item
+                                span.timer__number.hours_js
+                            .timer__item
+                                span.timer__number.minutes_js
+                            .timer__item
+                                span.timer__number.seconds_js
+
+                    span.single__date 1 июня 2021
+
+                ul.single__action
+                    li
+                        a(href="#").print Распечатать
+                    li
+                        a(href="#").pdf Скачать PDF
+                    li
+                        a(href="#").email Отправить на эл. почту
+
+            .single__slider
+                .swiper-container#slider
+                    .swiper-wrapper
+                        each item in [1, 2]
+                            .swiper-slide
+                                .slider__wrap(style="background-image: url('img/slider-min.jpg')")
+                    .swiper-pagination
+                .swiper-button-prev.slider__arrow_prev
+                .swiper-button-next.slider__arrow_next
+
+            ul.single__info
+                li
+                    i.icon-i
+                    span Какая-то информация
+                li
+                    i.icon-i
+                    span Какая-то информация
+                li
+                    i.icon-map
+                    span Санкт-Петербург, Дровяная улица, дом 7а, литер А,
+
+            .single__content
+                .content
+                    h2 Заголовок второго уровня
+                    p Начальная стадия проведения исследования позиционирует повседневный презентационный материал. Узнавание бренда создает пул лояльных изданий. Узнавание бренда без оглядки на авторитеты амбивалентно. До недавнего времени считалось, что емкость рынка существенно специфицирует межличностный формат события. Психологическая среда отталкивает системный анализ. Конкурентоспособность индуцирует поведенческий таргетинг.
+                    p Такое понимание ситуации восходит к Эл Райс, при этом воздействие на потребителя усиливает социометрический департамент маркетинга и продаж.
+                    p Стратегический рыночный план порождает институциональный пресс-клиппинг. Торговая марка подсознательно масштабирует коллективный бизнес-план. Практика однозначно показывает, что воздействие на потребителя масштабирует ребрендинг. Маркетингово- ориентированное издание определяет стратегический формат события. Социальный статус решительно ускоряет стратегический рыночный план, невзирая на действия конкурентов.
+                    h4 Заголовок четвертого уровня
+                    p Ежегодно на несколько дней Санкт‑Петербург становится столицей российского образования, открытой площадкой для дискуссий, обмена опытом, откровенного профессионального диалога ведущих специалистов в области просвещения.
+                    p В рамках форума запланировано около 300 мероприятий: конференции, семинары, круглые столы, мастер-классы, дискуссионные площадки, форсайт‑сессии, педагогические олимпиады, конкурсы, квесты, презентации.
+
+                    h3  Заголовок третьего уровня
+
+                    ul
+                        li Ежегодно на несколько дней Санкт‑Петербург становится столицей российского образования, открытой площадкой для дискуссий, обмена опытом, откровенного профессионального диалога ведущих специалистов в области просвещения.
+                        li В рамках форума запланировано около 300 мероприятий: конференции, семинары, круглые столы, мастер-классы, дискуссионные площадки, форсайт‑сессии, педагогические олимпиады, конкурсы, квесты, презентации.
+                        li Ежегодно на несколько дней Санкт‑Петербург становится столицей российского образования, открытой площадкой для дискуссий, обмена опытом, откровенного профессионального диалога ведущих специалистов в области просвещения.
+
+                    h5 Ссылки на другие разделы
+                    .linkTo
+                        a(href="#") Значительные события 2016-2017 года
+                        a(href="#") Значительные события 2016-2017 года
+                        a(href="#") Значительные события 2016-2017 года
+                        a(href="#") Значительные события 2016-2017 года
+
+                    h5 Документация
+                    .doc
+                        a(href="#") Значительные события 2016-2017 года
+                        a(href="#") Значительные события 2016-2017 года
+                        a(href="#") Значительные события 2016-2017 года
+                        a(href="#") Значительные события 2016-2017 года
+
+            .single__social
+                .social__title
+                    span Поделиться в социальных сетях:
+                .social
+                    .social__item
+                        a.social__link.icon-vk(href="#")
+                    .social__item
+                        a.social__link.icon-facebook(href="#")
+                    .social__item
+                        a.social__link.icon-youtube(href="#")
+                    .social__item
+                        a.social__link.icon-twitter(href="#")
+
+    section.single__map.single_section
+        .map
+            .map__content
+                .map__iframe
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc262d33fd93a90dcca99ec4019caf2b9982444e93e21372c4d7fa6058b75b69&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                .container_center
+                    .map__info
+                        .map__title
+                            span Адрес объявления
+                        .map__address
+                            span Санкт-Петербург, Дровяная улица, дом 7а, литер А,
+
+                        .map__mail
+                            a(href="mailto:hello@gmail.com") hello@gmail.com
+                        .map__phone
+                            a(href="tel:8 800 000 00 00") 8 800 000 00 00
+
+
+    // end single
+
+    // begin ads
+    section.single_section.ads
+        .container_center
+            h2.section__title Другие объявления
+
+            .swiper-container#ads
+                .swiper-wrapper
+                    //- slide start
+                    .swiper-slide
+                        .ads__item
+                            .ads__bg(style="background-image: url('img/ads/ads-2-min.jpg')")
+                                .ads__action
+                                    .ads__category важно
+                                    .ads__timer
+                                        .timer(id="trip_2022-06-12")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
+
+                                .ads__content
+                                    .ads__date 17 июня 2021
+                                    .ads__title
+                                        a(href="#") Вакцинация от COVID-19
+                                    .ads__text Показательный пример – действие гомогенно начинает когнитивный гомеостаз.
+                    //- slide end
+
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    .ads__timer
+                                        .timer(id="trip_2022-01-29")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
+
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-4-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Открытый урок и Всероссийское родительского онлайн-собрания
+                                .ads__text Открытый онлайн-урок, посвященный Дню воссоединения Крыма с Россией
+                    //- slide end
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    .ads__category важно
+                                    .ads__timer
+                                        .timer(id="trip_2022-01-20T13:38:10")
+                                            .timer__item.timer__item_days.daysItem_js
+                                                span.timer__number.days_js
+                                                span.timer__label.daysTitle_js
+                                            .timer__item
+                                                span.timer__number.hours_js
+                                            .timer__item
+                                                span.timer__number.minutes_js
+                                            .timer__item
+                                                span.timer__number.seconds_js
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+
+                    //- slide start
+                    .swiper-slide
+                        .ads__item.ads__item_reverse
+                            .ads__bg(style="background-image: url('img/ads/ads-3-min.jpg')")
+                                .ads__action
+                                    //- .ads__category важно
+                            .ads__content
+                                .ads__date 1 июня 2021
+                                .ads__title
+                                    a(href="#") Отбор на образовательную программу «Лингвистика» 
+                                .ads__text Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»
+                    //- slide end
+
+                .swiper-button-prev.ads__arrow_prev
+                .swiper-button-next.ads__arrow_next
+
+            .section__button
+                a.btn.btn_transparent(href="#") Смотреть все события
+
+
+    // end ads

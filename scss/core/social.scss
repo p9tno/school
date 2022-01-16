@@ -12,6 +12,26 @@
 		}
 	}
 
+	&__title {
+		margin-bottom: 1em;
+
+		span {
+			font-family: $title_font_family;
+			font-size: 1.125em;
+			font-weight: 500;
+		}
+
+		@media (min-width: 992px) {
+			margin-bottom: 0;
+			margin-right: 1em;
+
+			span {
+				font-size: 1.5em;
+			}
+		}
+
+	}
+
 	&__link {
 		text-decoration: none;
 		font-size: 1.75em;

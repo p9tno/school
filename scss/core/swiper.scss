@@ -24,35 +24,6 @@
     }
 }
 
-// .slider__arrow {
-//     display: none;
-//
-//     @media (min-width: 992px) {
-//         display: flex;
-//
-//         width: 3em;
-//         height: 3em;
-//         border: 0.094em solid;
-//         border-color: $color_white;
-//         border-radius: 50%;
-//         color: $color_white;
-//         // background-color: rgba($color_white, .2);
-//         opacity: 0.8;
-//
-//         transition: color 0.3s, border-color 0.3s, opacity 0.3s;
-//
-//         &:hover {
-//             opacity: 1;
-//             // border-color: $color_success;
-//             // color: $color_success;
-//         }
-//
-//         &:after {
-//             font-size: 1em;
-//         }
-//     }
-// }
-
 .swiper-button-next,
 .swiper-button-prev {
     display: none;

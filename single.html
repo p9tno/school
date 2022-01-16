@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <title>home</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <!-- begin header-->
+      <header class="header" id="header">
+        <div class="header__inner">
+          <div class="header__logo"><a class="logo" href="/"><img src="/img/logo.png" alt="alt"/></a></div>
+          <div class="header__wrap">
+            <div class="header__top">
+              <div class="header__action">
+                <div class="seach desktop"><a class="seach__link"><i class="icon-search"></i></a></div>
+                <div class="change">
+                  <div class="switch">
+                    <label class="switch__label">
+                      <input type="checkbox" id="themeCheckbox" name="themeCheckbox"/><span><i></i></span>
+                    </label>
+                  </div>
+                  <div class="fontsize">
+                    <div class="fontsize__group">
+                      <button class="fontsize__btn increaseFont-js" type="submit">A+</button>
+                      <button class="fontsize__btn defaultFont-js" type="submit">A</button>
+                      <button class="fontsize__btn fontsize__btn_sm decreaseFont-js" type="submit">A-</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="phone" id="phone">
+                  <div class="phone__item">
+                    <div class="phone__label desktop">5-11 классы</div><a class="phone__link" href="tel:8 800 000 00 00"><i class="icon-phone mobile"></i><span>8 800 000 00 00</span></a>
+                    <div class="phone__address mobile">Дровяная улица, дом 7а, литер А</div>
+                  </div>
+                  <div class="phone__drop">
+                    <div class="phone__item">
+                      <div class="phone__label desktop">4-5 классы</div><a class="phone__link" href="tel:+7 999 999 99 99"><i class="icon-phone mobile"></i><span>+7 999 999 99 99</span></a>
+                      <div class="phone__address mobile">Циолковского улица, дом 8, литер А</div>
+                    </div>
+                  </div>
+                  <div class="phone__toggle desktop"><i class="icon-arrow_bottom"></i></div>
+                </div>
+              </div>
+              <nav class="navbar navbar_top">
+                <ul class="menu">
+                  <li class="menu-item"><a href="#">Сведения об образовательной организации</a></li>
+                  <li class="menu-item"><a href="#">Электронная приемная</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__bottom">
+              <nav class="navbar">
+                <ul class="menu">
+                  <li class="menu-item"><a href="#">Новости</a></li>
+                  <li class="menu-item"><a href="#">Объявления</a></li>
+                  <li class="menu-item"><a href="#">F.A.Q.</a></li>
+                  <li class="menu-item"><a href="#">Контакты</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="#">Важное</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                      <li class="menu-item"><a href="#">Важный пункт меню</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="seach mobile"><a class="seach__link"><i class="icon-search"></i></a></div>
+        <div class="header__toggle"></div>
+      </header>
+      <!-- end header-->
+      <!-- begin main-->
+      <main class="main">
+        <!-- begin single-->
+        <section class="single single_section">
+          <div class="container_center container_center_sm">
+            <ul class="breadcrumb">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Объявления</a></li>
+              <li><a href="#">Петербургский международный образовательный форум-2021</a></li>
+            </ul>
+            <h3 class="single__title">Петербургский международный образовательный форум-2021</h3>
+            <div class="single__top">
+              <div class="single__time">
+                <div class="single__timer">
+                  <div class="timer__title"><span>Осталось:</span></div>
+                  <div class="timer" id="trip_2022-02-12T17:51:00">
+                    <div class="timer__item timer__item_days daysItem_js"><span class="timer__number days_js"></span><span class="timer__label daysTitle_js"></span></div>
+                    <div class="timer__item"><span class="timer__number hours_js"></span></div>
+                    <div class="timer__item"><span class="timer__number minutes_js"></span></div>
+                    <div class="timer__item"><span class="timer__number seconds_js"></span></div>
+                  </div>
+                </div><span class="single__date">1 июня 2021</span>
+              </div>
+              <ul class="single__action">
+                <li><a class="print" href="#">Распечатать</a></li>
+                <li><a class="pdf" href="#">Скачать PDF</a></li>
+                <li><a class="email" href="#">Отправить на эл. почту</a></li>
+              </ul>
+            </div>
+            <div class="single__slider">
+              <div class="swiper-container" id="slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider__wrap" style="background-image: url('img/slider-min.jpg')"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__wrap" style="background-image: url('img/slider-min.jpg')"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="swiper-button-prev slider__arrow_prev"></div>
+              <div class="swiper-button-next slider__arrow_next"></div>
+            </div>
+            <ul class="single__info">
+              <li><i class="icon-i"></i><span>Какая-то информация</span></li>
+              <li><i class="icon-i"></i><span>Какая-то информация</span></li>
+              <li><i class="icon-map"></i><span>Санкт-Петербург, Дровяная улица, дом 7а, литер А,</span></li>
+            </ul>
+            <div class="single__content">
+              <div class="content">
+                <h2>Заголовок второго уровня</h2>
+                <p>Начальная стадия проведения исследования позиционирует повседневный презентационный материал. Узнавание бренда создает пул лояльных изданий. Узнавание бренда без оглядки на авторитеты амбивалентно. До недавнего времени считалось, что емкость рынка существенно специфицирует межличностный формат события. Психологическая среда отталкивает системный анализ. Конкурентоспособность индуцирует поведенческий таргетинг.</p>
+                <p>Такое понимание ситуации восходит к Эл Райс, при этом воздействие на потребителя усиливает социометрический департамент маркетинга и продаж.</p>
+                <p>Стратегический рыночный план порождает институциональный пресс-клиппинг. Торговая марка подсознательно масштабирует коллективный бизнес-план. Практика однозначно показывает, что воздействие на потребителя масштабирует ребрендинг. Маркетингово- ориентированное издание определяет стратегический формат события. Социальный статус решительно ускоряет стратегический рыночный план, невзирая на действия конкурентов.</p>
+                <h4>Заголовок четвертого уровня</h4>
+                <p>Ежегодно на несколько дней Санкт‑Петербург становится столицей российского образования, открытой площадкой для дискуссий, обмена опытом, откровенного профессионального диалога ведущих специалистов в области просвещения.</p>
+                <p>В рамках форума запланировано около 300 мероприятий: конференции, семинары, круглые столы, мастер-классы, дискуссионные площадки, форсайт‑сессии, педагогические олимпиады, конкурсы, квесты, презентации.</p>
+                <h3> Заголовок третьего уровня</h3>
+                <ul>
+                  <li>Ежегодно на несколько дней Санкт‑Петербург становится столицей российского образования, открытой площадкой для дискуссий, обмена опытом, откровенного профессионального диалога ведущих специалистов в области просвещения.</li>
+                  <li>В рамках форума запланировано около 300 мероприятий: конференции, семинары, круглые столы, мастер-классы, дискуссионные площадки, форсайт‑сессии, педагогические олимпиады, конкурсы, квесты, презентации.</li>
+                  <li>Ежегодно на несколько дней Санкт‑Петербург становится столицей российского образования, открытой площадкой для дискуссий, обмена опытом, откровенного профессионального диалога ведущих специалистов в области просвещения.</li>
+                </ul>
+                <h5>Ссылки на другие разделы</h5>
+                <div class="linkTo"><a href="#">Значительные события 2016-2017 года</a><a href="#">Значительные события 2016-2017 года</a><a href="#">Значительные события 2016-2017 года</a><a href="#">Значительные события 2016-2017 года</a></div>
+                <h5>Документация</h5>
+                <div class="doc"><a href="#">Значительные события 2016-2017 года</a><a href="#">Значительные события 2016-2017 года</a><a href="#">Значительные события 2016-2017 года</a><a href="#">Значительные события 2016-2017 года</a></div>
+              </div>
+            </div>
+            <div class="single__social">
+              <div class="social__title"><span>Поделиться в социальных сетях:</span></div>
+              <div class="social">
+                <div class="social__item"><a class="social__link icon-vk" href="#"></a></div>
+                <div class="social__item"><a class="social__link icon-facebook" href="#"></a></div>
+                <div class="social__item"><a class="social__link icon-youtube" href="#"></a></div>
+                <div class="social__item"><a class="social__link icon-twitter" href="#"></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="single__map single_section">
+          <div class="map">
+            <div class="map__content">
+              <div class="map__iframe"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc262d33fd93a90dcca99ec4019caf2b9982444e93e21372c4d7fa6058b75b69&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe></div>
+              <div class="container_center">
+                <div class="map__info">
+                  <div class="map__title"><span>Адрес объявления</span></div>
+                  <div class="map__address"><span>Санкт-Петербург, Дровяная улица, дом 7а, литер А,</span></div>
+                  <div class="map__mail"><a href="mailto:hello@gmail.com">hello@gmail.com</a></div>
+                  <div class="map__phone"><a href="tel:8 800 000 00 00">8 800 000 00 00</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end single-->
+        <!-- begin ads-->
+        <section class="single_section ads">
+          <div class="container_center">
+            <h2 class="section__title">Другие объявления</h2>
+            <div class="swiper-container" id="ads">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="ads__item">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-2-min.jpg')">
+                      <div class="ads__action">
+                        <div class="ads__category">важно</div>
+                        <div class="ads__timer">
+                          <div class="timer" id="trip_2022-06-12">
+                            <div class="timer__item timer__item_days daysItem_js"><span class="timer__number days_js"></span><span class="timer__label daysTitle_js"></span></div>
+                            <div class="timer__item"><span class="timer__number hours_js"></span></div>
+                            <div class="timer__item"><span class="timer__number minutes_js"></span></div>
+                            <div class="timer__item"><span class="timer__number seconds_js"></span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ads__content">
+                        <div class="ads__date">17 июня 2021</div>
+                        <div class="ads__title"><a href="#">Вакцинация от COVID-19</a></div>
+                        <div class="ads__text">Показательный пример – действие гомогенно начинает когнитивный гомеостаз.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-3-min.jpg')">
+                      <div class="ads__action">
+                        <div class="ads__timer">
+                          <div class="timer" id="trip_2022-01-29">
+                            <div class="timer__item timer__item_days daysItem_js"><span class="timer__number days_js"></span><span class="timer__label daysTitle_js"></span></div>
+                            <div class="timer__item"><span class="timer__number hours_js"></span></div>
+                            <div class="timer__item"><span class="timer__number minutes_js"></span></div>
+                            <div class="timer__item"><span class="timer__number seconds_js"></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Отбор на образовательную программу «Лингвистика» </a></div>
+                      <div class="ads__text">Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-4-min.jpg')">
+                      <div class="ads__action"></div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Открытый урок и Всероссийское родительского онлайн-собрания</a></div>
+                      <div class="ads__text">Открытый онлайн-урок, посвященный Дню воссоединения Крыма с Россией</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-3-min.jpg')">
+                      <div class="ads__action">
+                        <div class="ads__category">важно</div>
+                        <div class="ads__timer">
+                          <div class="timer" id="trip_2022-01-20T13:38:10">
+                            <div class="timer__item timer__item_days daysItem_js"><span class="timer__number days_js"></span><span class="timer__label daysTitle_js"></span></div>
+                            <div class="timer__item"><span class="timer__number hours_js"></span></div>
+                            <div class="timer__item"><span class="timer__number minutes_js"></span></div>
+                            <div class="timer__item"><span class="timer__number seconds_js"></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Отбор на образовательную программу «Лингвистика» </a></div>
+                      <div class="ads__text">Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-3-min.jpg')">
+                      <div class="ads__action"></div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Отбор на образовательную программу «Лингвистика» </a></div>
+                      <div class="ads__text">Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-3-min.jpg')">
+                      <div class="ads__action"></div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Отбор на образовательную программу «Лингвистика» </a></div>
+                      <div class="ads__text">Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-3-min.jpg')">
+                      <div class="ads__action"></div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Отбор на образовательную программу «Лингвистика» </a></div>
+                      <div class="ads__text">Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ads__item ads__item_reverse">
+                    <div class="ads__bg" style="background-image: url('img/ads/ads-3-min.jpg')">
+                      <div class="ads__action"></div>
+                    </div>
+                    <div class="ads__content">
+                      <div class="ads__date">1 июня 2021</div>
+                      <div class="ads__title"><a href="#">Отбор на образовательную программу «Лингвистика» </a></div>
+                      <div class="ads__text">Начало конкурсного отбора на образовательную программу «Лингвистика», на базе Образовательного центра «Сириус»</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev ads__arrow_prev"></div>
+              <div class="swiper-button-next ads__arrow_next"></div>
+            </div>
+            <div class="section__button"><a class="btn btn_transparent" href="#">Смотреть все события</a></div>
+          </div>
+        </section>
+        <!-- end ads-->
+      </main>
+      <!-- end main-->
+      <!-- begin footer-->
+      <footer class="footer" id="footer">
+        <div class="container_center">
+          <div class="footer__inner">
+            <div class="footer__row">
+              <div class="footer__col">
+                <div class="footer__institution">
+                  <div class="footer__title"><span>Гимназия №278</span></div>
+                  <div class="footer__subtitle"><span>имени Б.Б. Голицына</span></div>
+                </div>
+                <div class="footer__social">
+                  <div class="social">
+                    <div class="social__item"><a class="social__link icon-vk" href="#"></a></div>
+                    <div class="social__item"><a class="social__link icon-facebook" href="#"></a></div>
+                    <div class="social__item"><a class="social__link icon-youtube" href="#"></a></div>
+                    <div class="social__item"><a class="social__link icon-twitter" href="#"></a></div>
+                  </div>
+                </div>
+                <div class="footer__data"><a class="footer__link" href="#">Обработка персональных данных</a></div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__naw">
+                  <nav class="navbar">
+                    <ul class="menu">
+                      <li class="menu-item"><a href="#">Сведения о образовательной организации</a></li>
+                      <li class="menu-item"><a href="#">Электронная приемная</a></li>
+                      <li class="menu-item"><a href="#">Новости</a></li>
+                      <li class="menu-item"><a href="#">Объявления</a></li>
+                      <li class="menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                  <nav class="navbar">
+                    <ul class="menu">
+                      <li class="menu-item"><a href="#">F.A.Q.</a></li>
+                      <li class="menu-item menu-item-has-children"><a href="#">Важное</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                          <li class="menu-item"><a href="#">Пункт меню</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="phone phone_footer">
+                  <div class="phone__item phone__item_footer"><a class="phone__link" href="tel:8 800 000 00 00"><i class="icon-phone"></i><span>8 800 000 00 00</span></a>
+                    <div class="phone__address">Дровяная улица, дом 7а, литер А</div>
+                  </div>
+                  <div class="phone__item phone__item_footer"><a class="phone__link" href="tel:+7 999 999 99 99"><i class="icon-phone"></i><span>+7 999 999 99 99</span></a>
+                    <div class="phone__address">Циолковского улица, дом 8, литер А</div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__action">
+                  <div class="fontsize">
+                    <div class="fontsize__group">
+                      <button class="fontsize__btn increaseFont-js" type="submit">A+</button>
+                      <button class="fontsize__btn defaultFont-js" type="submit">A</button>
+                      <button class="fontsize__btn fontsize__btn_sm decreaseFont-js" type="submit">A-</button>
+                    </div>
+                  </div>
+                  <div class="switch">
+                    <label class="switch__label">
+                      <input type="checkbox" id="themeCheckbox" name="themeCheckbox"/><span><i></i></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__row">
+              <div class="footer__copyright"><span>© 2009-2017 ГБОУ Гимназия №278. Адмиралтейского района Санкт-Петербурга</span></div>
+              <div class="footer__info"><a class="footer__link" href="#">Карта сайта</a><a class="footer__link" href="#">Сообщить об ошибке на сайте</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer-->
+      <div class="toTop" id="toTop"><a class="icon-arrow_long" href="#header"></a></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/fontsize.js"></script>
+    <script src="/js/changetheme.js"></script>
+    <script src="js/swiper-bundle.min.js"> </script>
+    <script src="/js/initsliders.js"> </script>
+    <script src="js/timers.js"> </script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
