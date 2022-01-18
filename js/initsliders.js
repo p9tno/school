@@ -38,6 +38,7 @@ $(document).ready(function() {
                 slidesPerView: 4,
 
                 speed: 300,
+                // loop: true,
 
                 navigation: {
                     nextEl: '.ads__arrow_next',
@@ -75,6 +76,58 @@ $(document).ready(function() {
 
 });
 // end ads
+// start slider single news
+$(document).ready(function() {
+    let sliderNews = null;
+    let mediaQuerySize = 992;
+
+    function initSlidet () {
+        if (!sliderNews) {
+            console.log("ADS Slider on");
+            sliderNews = new Swiper('#sliderNews', {
+
+                // Optional parameters
+                slidesPerView: 3,
+
+                speed: 300,
+                // loop: true,
+
+                navigation: {
+                    nextEl: '.ads__arrow_next',
+                    prevEl: '.ads__arrow_prev',
+                },
+
+
+
+            });
+        }
+    }
+
+    function destroySlider () {
+        if (sliderNews) {
+            console.log("ADS Slider of");
+            sliderNews.destroy();
+            sliderNews = null;
+        }
+    }
+
+    $(window).on('load resize', function () {
+        // Берём текущую ширину экрана
+        let windowWidth = $(this).innerWidth();
+        // console.log(windowWidth);
+
+        // Если ширина экрана больше или равна mediaQuerySize
+        if (windowWidth >= mediaQuerySize) {
+            // Инициализировать слайдер если он ещё не был инициализирован
+            initSlidet()
+        } else {
+            // Уничтожить слайдер если он был инициализирован
+            destroySlider()
+        }
+    });
+
+});
+// end slider single news
 
 // start tabs
 $(document).ready(function() {

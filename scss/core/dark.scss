@@ -205,8 +205,21 @@
 // end information
 
 // start aside
+.dark_theme .category {
+    background: inherit;
+    // @media (min-width: 992px) {
+    //     background: $main_color_dark;
+    //     // background: linear-gradient(to right,$main_color 31%, $main_color_dark 31%);
+    // }
+    // @media (min-width: 1599px) {
+    //     // background: linear-gradient(to right, $main_color 35%, $main_color_dark 40%);
+    // }
+}
+
 .dark_theme .category__aside {
-    background-color: $main_color;
+    @media (max-width: 991px) {
+        background-color: $main_color;
+    }
 }
 
 .dark_theme .aside__link,
@@ -270,3 +283,22 @@
     }
 }
 // end single
+
+// start contacts
+.dark_theme .mapTabs__item.active {
+    @media (min-width: 992px) {
+        background-color: $main_color;
+    }
+}
+
+.dark_theme .contacts__doc,
+.dark_theme .form__inner {
+    background-color: $main_color;
+}
+
+.dark_theme .form__status {
+    span {
+        color: $color_white_dark;
+    }
+}
+// end contacts

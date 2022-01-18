@@ -126,7 +126,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$(window).scroll(function(){
-		if($(window).scrollTop()>2000){
+		if($(window).scrollTop()>1000){
 			// $('#toTop').fadeIn(900)
 			$('#toTop').addClass('active')
 		}else{
@@ -359,6 +359,17 @@ function doTabsInformation() {
     });
 };
 doTabsInformation()
+
+function doTabsMap() {
+    $('.mapTabs__item').on('click', function() {
+        $('.mapTabs__item').removeClass('active');
+        $(this).addClass('active');
+
+        $('.mapTabContent__item').removeClass('active');
+        $($(this).data('tab')).addClass('active');
+    });
+};
+doTabsMap()
 
 
 

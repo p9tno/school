@@ -26,6 +26,33 @@
         @media (min-width: 992px) {
             margin-right: 2em;
         }
+        //START .swiper-slide_news
+        &_news {
+            margin-right: 1em;
+            width: 20em!important;
+
+            .news__item {
+                min-height: 27.5em;
+            }
+
+            .news__bg {
+                min-height: 27.5em;
+            }
+
+            @media (min-width: 992px) {
+                margin-right: 1.875em;
+                width: 26.25em!important;
+
+                .news__item {
+                    min-height: 35em;
+                }
+
+                .news__bg {
+                    min-height: 35em;
+                }
+            }
+        }
+        //END .swiper-slide_news
 
     }
 

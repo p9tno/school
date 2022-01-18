@@ -1,131 +1,132 @@
 extends layout/layout.pug
 
 block content
-
     .category
-        .category__aside
-            .aside
-                .aside__title
-                    span Тематики
-                .aside__search.desktop
-                    .searchform
-                        form.searchform__form
-                            input.searchform__input(type="text" placeholder="Поиск по темам")
-                            button.searchform__button(type="submit")
-                .aside__date
-                    ul.date__list
-                        each item in ['все', '2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009']
-                            li.date__item
-                                a(href="#").date__link=  item
-                        li.date__item
-                            a(href="#").date__link
-                                span
+        .container_center
+            .category__wrap
+                .category__aside
+                    .aside
+                        .aside__title
+                            span Тематики
+                        .aside__search.desktop
+                            .searchform
+                                form.searchform__form
+                                    input.searchform__input(type="text" placeholder="Поиск по темам")
+                                    button.searchform__button(type="submit")
+                        .aside__date
+                            ul.date__list
+                                each item in ['все', '2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009']
+                                    li.date__item
+                                        a(href="#").date__link=  item
+                                li.date__item
+                                    a(href="#").date__link
+                                        span
 
-                ul.aside__list.aside__list_img
-                    each item in [ {title : 'Информация для родителей', img : 'parents'}, {title : 'Спортивные мероприятия', img : 'sport'}, {title : 'Концерты', img : 'concert'}, {title : 'Международные конкурсы', img : 'contest'}, {title : 'Учебные будни', img : 'weekdays'}, {title : 'Выпускные', img : 'ball'}, {title : 'Благотворительность', img : 'charity'}, ]
+                        ul.aside__list.aside__list_img
+                            each item in [ {title : 'Информация для родителей', img : 'parents'}, {title : 'Спортивные мероприятия', img : 'sport'}, {title : 'Концерты', img : 'concert'}, {title : 'Международные конкурсы', img : 'contest'}, {title : 'Учебные будни', img : 'weekdays'}, {title : 'Выпускные', img : 'ball'}, {title : 'Благотворительность', img : 'charity'}, ]
 
-                        li.aside__item.aside__item_drop
-                            .aside__img
-                                img(src="img/category/"+item.img+"-min.png")
-                            a.aside__link(href="#")= item.title
-                                span.aside__quantity (150)
-                            ul.aside__dropList
-                                each item in [1,2,3,4]
-                                    li.aside__item
-                                        a.aside__link(href="#") пункт меню
-
-
-                .aside__toggle.mobile.asideToggleClose-js
-                    i.icon-close
+                                li.aside__item.aside__item_drop
+                                    .aside__img
+                                        img(src="img/category/"+item.img+"-min.png")
+                                    a.aside__link(href="#")= item.title
+                                        span.aside__quantity (150)
+                                    ul.aside__dropList
+                                        each item in [1,2,3,4]
+                                            li.aside__item
+                                                a.aside__link(href="#") пункт меню
 
 
-        .category__content
-            //- ul.breadcrumb
-            //-     li
-            //-         a(href="#") Главная
-            //-     li
-            //-         a(href="#") Новости
-
-            h3.category__title
-                span Новости
-
-            .category__search.mobile
-                .searchform
-                    form.searchform__form
-                        input.searchform__input(type="text" placeholder="Новости по темам")
-                        button.searchform__button(type="submit")
-
-            .category__button.mobile.asideToggleOpen-js
-                .btn.btn_toggle
-                    span Другие тематики
-
-            .category__filter
-                a(href="#") Сначала важные
+                        .aside__toggle.mobile.asideToggleClose-js
+                            i.icon-close
 
 
+                .category__content
+                    //- ul.breadcrumb
+                    //-     li
+                    //-         a(href="#") Главная
+                    //-     li
+                    //-         a(href="#") Новости
 
-            // start grid
-            .news__grid
-                //- start grid item
-                .news__item
-                    .news__bg(style="background-image: url('img/news/news-1-min.jpg')")
-                        .news__category важно
-                        .news__content
-                            .news__date 30 мая 2021
-                            .news__title
-                                a(href="#") Эко-фестиваль
-                            .news__text Ученики 10-11 класса приняли участие в мероприятии эко-недели, организованной Домом Молодежи «Рекорд» 
+                    h3.category__title
+                        span Новости
 
-                //- end grid item
+                    .category__search.mobile
+                        .searchform
+                            form.searchform__form
+                                input.searchform__input(type="text" placeholder="Новости по темам")
+                                button.searchform__button(type="submit")
 
-                //- start grid item
-                .news__item
-                    .news__img(style="background-image: url('img/news/news-2-min.jpg')")
-                    .news__content
-                        .news__date.news__date_reverse 26 мая 2021
-                        .news__title.news__title_reverse
-                            a(href="#") Награждение педагогов
-                        .news__text.news__text_reverse Во 2 Санкт-Петербургской гимназии, состоялась торжественная церемония награждения нагрудным знаком «Почетный работник воспитания и просвещения Российской Федерации»
-                //- end grid item
-                //- start grid item
-                .news__item
-                    .news__img(style="background-image: url('img/news/news-3-min.jpg')")
-                    .news__content
-                        .news__date.news__date_reverse 26 мая 2021
-                        .news__title.news__title_reverse
-                            a(href="#") Акция «Белый цветок»
-                        .news__text.news__text_reverse В Международный день защиты детей, во всех школах страны проходит акция «Белый цветок». Это всероссийская благотворительная акция, направленная на повышение уровня знаний об инклюзии в обществе
-                //- end grid item
-                //- start grid item
-                .news__item
-                    .news__img(style="background-image: url('img/news/news-4-min.jpg')")
-                    .news__content
-                        .news__date.news__date_reverse 25 мая 2021
-                        .news__title.news__title_reverse
-                            a(href="#") Международный конкурс юных талантов «Звезда Прометея»
-                        .news__text.news__text_reverse В17 мая 2021 года во дворце Меньшикова на Университетской набережной состоялось награждение лауреатов 25-го Международного конкурса юных талантов «Звезда Прометея»
-                //- end grid item
-                .news__item
-                    .news__bg(style="background-image: url('img/news/news-5-min.jpg')")
-                        .news__category.news__category_info родителям
-                        .news__content
-                            .news__date 24 мая 2021
-                            .news__title
-                                a(href="#") Последний звонок 2021
-                            .news__text Во дворе гимназии было солнечно, радостно и празднично. Музыка, шарики, счастливые лица. Природа подарила нашим выпускникам прекрасную погоду
+                    .category__button.mobile.asideToggleOpen-js
+                        .btn.btn_toggle
+                            span Другие тематики
 
-                //- end grid item
-                .news__item
-                    .news__bg(style="background-image: url('img/news/news-6-min.jpg')")
-                        .news__category важно
-                        .news__content
-                            .news__date 24 апреля 2021
-                            .news__title
-                                a(href="#") Т-Студия «Театр на Дровяной»
-                            .news__text В Актовом зале гимназии, состоялось выступление участников Т- Студии и видеозапись спектакля немецкой народной сказки «Груффало»
+                    .category__filter
+                        a(href="#") Сначала важные
 
-                //- end grid item
 
-            // end grid
-            .section__button
-                a.btn.btn_transparent(href="#") Смотреть все новости
+
+                    // start grid
+                    .news__grid
+                        //- start grid item
+                        .news__item
+                            .news__bg(style="background-image: url('img/news/news-1-min.jpg')")
+                                .news__category важно
+                                .news__content
+                                    .news__date 30 мая 2021
+                                    .news__title
+                                        a(href="#") Эко-фестиваль
+                                    .news__text Ученики 10-11 класса приняли участие в мероприятии эко-недели, организованной Домом Молодежи «Рекорд» 
+
+                        //- end grid item
+
+                        //- start grid item
+                        .news__item
+                            .news__img(style="background-image: url('img/news/news-2-min.jpg')")
+                            .news__content
+                                .news__date.news__date_reverse 26 мая 2021
+                                .news__title.news__title_reverse
+                                    a(href="#") Награждение педагогов
+                                .news__text.news__text_reverse Во 2 Санкт-Петербургской гимназии, состоялась торжественная церемония награждения нагрудным знаком «Почетный работник воспитания и просвещения Российской Федерации»
+                        //- end grid item
+                        //- start grid item
+                        .news__item
+                            .news__img(style="background-image: url('img/news/news-3-min.jpg')")
+                            .news__content
+                                .news__date.news__date_reverse 26 мая 2021
+                                .news__title.news__title_reverse
+                                    a(href="#") Акция «Белый цветок»
+                                .news__text.news__text_reverse В Международный день защиты детей, во всех школах страны проходит акция «Белый цветок». Это всероссийская благотворительная акция, направленная на повышение уровня знаний об инклюзии в обществе
+                        //- end grid item
+                        //- start grid item
+                        .news__item
+                            .news__img(style="background-image: url('img/news/news-4-min.jpg')")
+                            .news__content
+                                .news__date.news__date_reverse 25 мая 2021
+                                .news__title.news__title_reverse
+                                    a(href="#") Международный конкурс юных талантов «Звезда Прометея»
+                                .news__text.news__text_reverse В17 мая 2021 года во дворце Меньшикова на Университетской набережной состоялось награждение лауреатов 25-го Международного конкурса юных талантов «Звезда Прометея»
+                        //- end grid item
+                        .news__item
+                            .news__bg(style="background-image: url('img/news/news-5-min.jpg')")
+                                .news__category.news__category_info родителям
+                                .news__content
+                                    .news__date 24 мая 2021
+                                    .news__title
+                                        a(href="#") Последний звонок 2021
+                                    .news__text Во дворе гимназии было солнечно, радостно и празднично. Музыка, шарики, счастливые лица. Природа подарила нашим выпускникам прекрасную погоду
+
+                        //- end grid item
+                        .news__item
+                            .news__bg(style="background-image: url('img/news/news-6-min.jpg')")
+                                .news__category важно
+                                .news__content
+                                    .news__date 24 апреля 2021
+                                    .news__title
+                                        a(href="#") Т-Студия «Театр на Дровяной»
+                                    .news__text В Актовом зале гимназии, состоялось выступление участников Т- Студии и видеозапись спектакля немецкой народной сказки «Груффало»
+
+                        //- end grid item
+
+                    // end grid
+                    .section__button
+                        a.btn.btn_transparent(href="#") Смотреть все новости

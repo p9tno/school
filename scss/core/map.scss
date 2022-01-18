@@ -1,5 +1,5 @@
 .map {
-    &__content {
+    &__wrap {
         position: relative;
     }
 
@@ -21,7 +21,7 @@
 
     }
 
-    &__info {
+    &__content {
         margin-top: 1.5em;
 
         @media (min-width: 992px) {
@@ -29,12 +29,29 @@
             position: absolute;
             top: 30%;
             width: 33em;
+            // min-height: 16.5em;
+            // border-radius: 1em;
+            // box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
+
+            // padding: 2.5em;
+            // background-color: $color_white;
+
+        }
+
+    }
+
+    &__info {
+
+        @media (min-width: 992px) {
+            position: relative;
             min-height: 16.5em;
             border-radius: 1em;
             box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
 
             padding: 2.5em;
             background-color: $color_white;
+            transition: background-color 0.3s;
+            z-index: 1;
 
         }
     }
@@ -80,6 +97,97 @@
             color: $main_color;
             font-size: 1.25em;
 
+        }
+    }
+}
+
+.mapTabs {
+    display: flex;
+    text-align: center;
+    margin-bottom: 2em;
+
+    @media (min-width: 992px) {
+        margin-bottom: 0;
+    }
+
+    &__item {
+        position: relative;
+        width: 50%;
+        padding: 0.66em 0.75em;
+        background-color: $color_success;
+        color: $color_white;
+        font-weight: 500;
+        cursor: pointer;
+
+        transition: color 0.3s, background-color 0.3s;
+
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        margin-right: 1em;
+
+        border: 0.094em solid;
+        border-color: $color_success;
+
+        @media (min-width: 992px) {
+            border: none;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 0.125em;
+
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (min-width: 992px) {
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2em;
+                right: 0;
+                display: block;
+
+                height: 2em;
+                background-color: inherit;
+
+            }
+        }
+
+        &.active {
+            background-color: $color_white;
+            color: $main_color;
+            border-color: $color_grey;
+
+            @media (min-width: 992px) {
+                color: $color_success;
+            }
+
+        }
+
+    }
+}
+
+.mapTabContent {
+    .map__info {
+        box-shadow: none;
+    }
+
+    &__item {
+        display: none;
+        // font-size: 0;
+        // opacity: 0;
+        // transition: 0.3s;
+
+        &.active {
+            display: block;
+            // font-size: 1em;
+            // opacity: 1;
         }
     }
 }

@@ -1,0 +1,95 @@
+extends layout/layout.pug
+
+block content
+    // begin contacts
+    .contacts
+        .contacts__map.contacts_section
+            .map
+                .map__wrap
+
+                    .map__iframe
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc262d33fd93a90dcca99ec4019caf2b9982444e93e21372c4d7fa6058b75b69&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+
+
+                    .container_center
+                        .map__content
+
+                            .mapTabs
+                                .mapTabs__item.active(data-tab="#plate-1") 1-4 класс
+                                .mapTabs__item(data-tab="#plate-2") 5-11 класс
+
+                            .mapTabContent
+                                .mapTabContent__item.active#plate-1
+
+                                    .map__info
+                                        .map__title
+                                            span Контакты 1
+                                        .map__address
+                                            span Санкт-Петербург, Дровяная улица, дом 7а, литер А,
+
+                                        .map__mail
+                                            a(href="mailto:hello@gmail.com") hello@gmail.com
+                                        .map__phone
+                                            a(href="tel:8 800 000 00 00") 8 800 000 00 00
+                                .mapTabContent__item#plate-2
+
+                                    .map__info
+                                        .map__title
+                                            span Контакты 2
+                                        .map__address
+                                            span Санкт-Петербург, Дровяная улица, дом 7а, литер А,
+
+                                        .map__mail
+                                            a(href="mailto:hello@gmail.com") hello@gmail.com
+                                        .map__phone
+                                            a(href="tel:8 800 000 00 00") 8 800 000 00 00
+
+        .contacts__form.contacts_section
+            .container_center
+                .form__wrap
+
+                    .form__inner
+                        .form__title
+                            h3 Ваше обращение к директору Гимназии
+                        form.form.form_grid(action="send.php")
+                            .form__row
+                                label.form__label(for="name") Как вас зовут?
+                                input(type="text" id="name" name="name" placeholder="Имя Фамилия")
+
+                            .form__row
+                                label.form__label(for="email") Эл. почта
+                                input(type="email" id="email" name="email" placeholder="example@gmail.com")
+
+                            .form__row.form__row_full
+                                label.form__label(for="topic") Тема обращения
+                                input(type="text" id="topic" name="topic" placeholder="Учебный процесс 10A")
+
+                            .form__row.form__row_full
+                                label.form__label(for="message") Текст обращения
+                                textarea(type="text" id="message" name="message" placeholder="Ваше обращение" required)
+
+                            .form__row.form__row_full
+                                .button
+                                    button.btn(type="submit") Отправить сообщение
+
+                            .form__text
+                                span Нажимая кнопку вы соглашаеесь с условиями <a href="#">политики конфиденциальности</a> сайта
+
+                    .form__info
+                        .form__bg(style="background-image: url('img/slider-min.jpg')")
+                        .form__name
+                            span Валентина Михайловна Шутова
+                        .form__status
+                            span Директор ГБОУ гимназии №278 имени Б.Б. Голицын
+
+
+
+
+        .contacts__doc.contacts_section
+            .container_center
+                h3 Документация
+                ul
+                    li Места осуществления образовательной деятельности, в том числе не указанных в приложении к лицензии (реестре лицензий) на осуществление образовательной деятельности в соответствии с частью 4 статьи 91 Федерального закона от 29 декабря 2012 г. № 273-ФЗ
+                    li Учредитель (учредители) образовательной организации
+
+    // end contacts
