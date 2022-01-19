@@ -29,12 +29,6 @@
             position: absolute;
             top: 30%;
             width: 33em;
-            // min-height: 16.5em;
-            // border-radius: 1em;
-            // box-shadow: 0.125em 0.125em 1.25em rgba(0, 0, 0, 0.1);
-
-            // padding: 2.5em;
-            // background-color: $color_white;
 
         }
 
@@ -50,7 +44,6 @@
 
             padding: 2.5em;
             background-color: $color_white;
-            transition: background-color 0.3s;
             z-index: 1;
 
         }
@@ -119,7 +112,7 @@
         font-weight: 500;
         cursor: pointer;
 
-        transition: color 0.3s, background-color 0.3s;
+        // transition: color 0.3s, background-color 0.3s;
 
         border-top-left-radius: 1em;
         border-top-right-radius: 1em;

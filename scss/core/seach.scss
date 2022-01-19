@@ -3,19 +3,15 @@
 .seach {
     position: absolute;
     top: 1.0625em;
-    /* 17/16 */
     right: 3.4375em;
-    /* 55/16 */
 
     @media (min-width: 992px) {
         position: static;
         margin-right: 1.875em;
-        /* 30/16 */
     }
 
     &__link {
         font-size: 1.5em;
-        /* 24/16 */
         cursor: pointer;
         color: $main_color;
 

@@ -15,7 +15,6 @@
 
         &.ads {
             background-color: $color_white;
-            transition: background-color 0.3s;
         }
     }
 
@@ -262,8 +261,6 @@
         }
 
     }
-
-    &__content {}
 
     &__social {
         margin-top: 2.5em;

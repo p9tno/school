@@ -29,8 +29,6 @@ body {
     &:before {
         box-sizing: border-box;
     }
-    // transition: background-color 0.3s;
-    // transition: color 0.3s;
 }
 
 .wrapper {
@@ -41,17 +39,12 @@ body {
     min-height: 100%;
 
     background-color: $color_white;
-
-    transition: background-color 0.3s, color 0.3s;
-
 }
 
 .main {
-    // box-shadow: inset 0.125em 0.125em 0.625em rgba($color_black, 0.1);
     box-shadow: inset 0.063em 0.375em 0.563em -0.375em rgba($color_black, 0.1);
     flex-grow: 1;
     background-color: $color_white;
-    transition: background-color 0.3s;
     z-index: 0;
 }
 
@@ -103,7 +96,6 @@ body {
             }
         }
 
-        transition: color 0.3s;
     }
 
     &__button {
@@ -130,9 +122,7 @@ body {
 
 .change {
     display: flex;
-    // justify-content: space-between;
     text-align: center;
-    // width: 100%;
 
     margin-bottom: 40px;
 
@@ -154,19 +144,8 @@ img {
     display: block;
 }
 
-// ul {
-//     margin-block-start: 16px;
-//     margin-block-end: 16px;
-// }
-
-//
 // Найти блоки которые вываливается за край
 
 // * {
 //     border: 1px solid #000;
-// }
-
-// Все обрезает что вываливеется
-// .wrapper {
-//     overflow: hidden;
 // }

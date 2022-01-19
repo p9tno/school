@@ -217,8 +217,12 @@
 }
 
 .dark_theme .category__aside {
-    @media (max-width: 991px) {
+    background-color: $main_color;
+
+    &:after {
+        content: '';
         background-color: $main_color;
+
     }
 }
 
@@ -302,3 +306,8 @@
     }
 }
 // end contacts
+// start fontsize
+.dark_theme .fontsize__btn:disabled {
+    color: #C2C0C4;
+}
+// end fontsize

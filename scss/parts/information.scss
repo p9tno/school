@@ -40,7 +40,6 @@
         position: relative;
         border-radius: 1em;
         background-color: #F3F4F5;
-        transition: background-color 0.3s;
         padding: 1.5em 1em 5em;
 
         @media (min-width: 992px) {
@@ -141,7 +140,7 @@
         font-weight: 500;
         cursor: pointer;
 
-        transition: color 0.3s, background-color 0.3s;
+        // transition: color 0.3s, background-color 0.3s;
 
         margin-right: 0.5em;
         @media (min-width: 992px) {

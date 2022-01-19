@@ -2,12 +2,10 @@
  ----------------------------------------------------------------------------- */
 .footer {
 	background-color: $color_white;
-	transition: background-color 0.3s;
 
 	&__inner {
 		border-top: 2px solid;
 		border-color: $color_white_dark;
-		transition: border-color 0.3s;
 
 		padding-top: 2.625em;
 		padding-bottom: 2.5em;
@@ -44,7 +42,6 @@
 		font-family: $title_font_family;
 		color: $main_color;
 		margin-bottom: 2em;
-		transition: color 0.3s;
 	}
 
 	&__title {
@@ -176,7 +173,6 @@
 
 	&__copyright {
 		color: $main_color;
-		transition: color 0.3s;
 
 		margin-bottom: 1em;
 		@media (min-width: 992px) {
