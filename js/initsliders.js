@@ -14,10 +14,6 @@ $(document).ready(function() {
             delay: 3000,
         },
         loop: true,
-        // effect: "fade",
-        // effect: "cube",
-        // effect: "coverflow",
-        // effect: "flip",
         speed: 300,
 
     })
@@ -31,29 +27,22 @@ $(document).ready(function() {
 
     function initSlidet () {
         if (!ads) {
-            console.log("ADS Slider on");
+            // console.log("ADS Slider on");
             ads = new Swiper('#ads', {
-
                 // Optional parameters
                 slidesPerView: 4,
-
                 speed: 300,
-                // loop: true,
-
                 navigation: {
                     nextEl: '.ads__arrow_next',
                     prevEl: '.ads__arrow_prev',
                 },
-
-
-
             });
         }
     }
 
     function destroySlider () {
         if (ads) {
-            console.log("ADS Slider of");
+            // console.log("ADS Slider of");
             ads.destroy();
             ads = null;
         }
@@ -76,6 +65,7 @@ $(document).ready(function() {
 
 });
 // end ads
+
 // start slider single news
 $(document).ready(function() {
     let sliderNews = null;
@@ -83,29 +73,23 @@ $(document).ready(function() {
 
     function initSlidet () {
         if (!sliderNews) {
-            console.log("ADS Slider on");
+            // console.log("ADS Slider on");
             sliderNews = new Swiper('#sliderNews', {
 
                 // Optional parameters
                 slidesPerView: 3,
-
                 speed: 300,
-                // loop: true,
-
                 navigation: {
                     nextEl: '.ads__arrow_next',
                     prevEl: '.ads__arrow_prev',
                 },
-
-
-
             });
         }
     }
 
     function destroySlider () {
         if (sliderNews) {
-            console.log("ADS Slider of");
+            // console.log("ADS Slider of");
             sliderNews.destroy();
             sliderNews = null;
         }
@@ -136,19 +120,13 @@ $(document).ready(function() {
 
     function initSlidet () {
         if (!tabs) {
-            console.log("tabs Slider on");
+            // console.log("tabs Slider on");
 
             tabs = new Swiper('#tabs', {
 
                 slidesPerView: 6,
                 slidesPerGroup: 2,
                 freeMode: true,
-                // loop: true,
-
-                // autoplay: {
-                //     delay: 300000,
-                // },
-
                 speed: 300,
 
                 navigation: {
@@ -162,7 +140,7 @@ $(document).ready(function() {
 
     function destroySlider () {
         if (tabs) {
-            console.log("tabs Slider of");
+            // console.log("tabs Slider of");
             tabs.destroy();
             tabs = null;
         }
@@ -193,19 +171,13 @@ $(document).ready(function() {
 
     function initSlidet () {
         if (!teachers) {
-            console.log("teachers Slider on");
+            // console.log("teachers Slider on");
 
             teachers = new Swiper('#teachers', {
 
                 slidesPerView: 10,
                 slidesPerGroup: 1,
                 freeMode: true,
-                // loop: true,
-
-                // autoplay: {
-                //     delay: 300000,
-                // },
-
                 speed: 300,
 
                 navigation: {
@@ -242,12 +214,3 @@ $(document).ready(function() {
 
 });
 // end teachers
-
-// if ($(".photoGallery__arrow_prev").hasClass('swiper-button-disabled')) {
-// // есть класс
-//     console.log('есть класс');
-// } else {
-//     console.log('нет класса');
-// }
-//
-// console.log($(".photoGallery__arrow_prev"));
